@@ -1,0 +1,168 @@
+
+@import custom/custom
+@import custom/mixin
+@import mybs
+
+
+
+// 字符限制
++elimit(5)
++elimit(25)
+
+.climit2
+  max-height: 3em
+  overflow: hidden
+  display: block
+  line-height: 145%
+
+
+// 字符一行
+.ellipsis
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+// 颜色
++color('orange', '#ff6000')
++color('gray')
++color('red')
++color('black')
++color('blue', '#01a7f5')
+
+// 图标尺寸
++size-icon(192, 38)
++size-icon(150)
+
+
+// 主要头部选项卡
+.header-tab
+  border-bottom: 1px solid #aaa
+  margin-bottom: 50px
+  li
+    display: inline-block
+  a
+    +skin-basic(#f2f2f2, #000, #ccc)
+    border-bottom: 0
+    display: inline-block
+    +line-height(35px)
+    padding: 0 15px
+    &:hover,
+    &.current
+      +skin-bgfg(#ff500b, #fff)
+    
+
+// 中间内容
+.content
+  width: 1190px
+  margin: 0 auto
+  padding: 20px 0
+  margin-bottom: 70px
+  background: #fff
+  font-family: 微软雅黑
+.content2
+  padding: 20 0
+  margin-bottom: 70px
+  margin-top: 20px
+
+// 左侧个人信息菜单
+.side-menu
+  .title
+    margin-bottom: 15px
+    border-bottom: 1px solid #aaa
+  li
+    +line-height(35px)
+  a
+    padding-left: 20px
+    display: block
+    &:hover,
+    &.current
+      +skin-bgfg(#aaa, #fff)
+
+// 右边内容区
+.right-content
+  padding: 25px
+  font-size: 14px
+  +link-a(#000, #ff6600)
+  .btn
+    +border-radius(4px)
+
+// 统一标题
+.main-title
+  font-size: 14px
+  +line-height(35px)
+  border-bottom: 1px solid #aaa
+  span
+    +skin-bgfg(#ff500b, #fff)
+    display: inline-block
+    padding: 0 20px
+  
+
+.inline
+  display: inline-block
+  
+// 订单左右结构
+.order-left,
+.order-right
+  @extend .inline
+
+// 右侧选项卡菜单
+.main-tab
+  ul
+    font-size: 0
+    width: 100%
+    border-bottom: 2px solid #e8e8e8
+  li
+    font-size: 15px
+    font-weight: 600
+    display: inline-block
+    padding: 12px 0 12px 20px
+    cursor: pointer
+    &.current
+      border-bottom: 2px solid #ff6000
+      margin-bottom: -2px
+      a
+        color: #ff6000 
+  a
+    color: #000
+    display: inline-block
+    &:hover
+      color: #ff6000
+  span
+    color: #e8e8e8
+    padding-left: 15px
+
+
+// 宽度
+.w450
+  width: 450px
+  @extend .inline
+.w420
+  width: 420px
+  @extend .inline
+.w390
+  width: 390px
+  @extend .inline
+.w320
+  width: 320px
+  @extend .inline
+.w270
+  width: 270px
+  @extend .inline
+.w220
+  width: 220px
+  @extend .inline
+.w160
+  width: 160px
+  @extend .inline
+.w130
+  width: 130px
+  @extend .inline
+.w30
+  width: 30px
+  @extend .inline
+.w100
+  width: 100px
+  @extend .inline
+.w80
+  width: 80px
+  @extend .inline

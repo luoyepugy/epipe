@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>优管网-订单</title>
+<link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="../../lib/jquery-ui/jquery-ui.min.css">
+<link rel="stylesheet" href="../../lib/timepicker/jquery-ui-timepicker-addon.css">
+<link rel="stylesheet" href="../css/epipe.css">
+<link rel="stylesheet" href="../css/common.min.css">
+<link rel="stylesheet" href="../css/pages/order.min.css">
+</head>
+<body>
+    <!-- 头部导航 -->
+    <div class="header"></div>
+    <!-- /头部导航 -->
+    <!-- 中间内容 -->
+    <div class="content">
+        <!-- 左侧菜单 -->
+ <!--        <div class="menu-tree">
+            <dl>
+                <dt>我的交易</dt>
+                <dd><a href="#">我的购物车</a></dd>
+                <dd><a href="#" class="current">已买到的宝贝</a><i class="glyphicon glyphicon-triangle-top ml5 gray"></i>
+                    <ul>
+                        <li><a href="#">我的拍卖</a></li>
+                        <li><a href="#">我的电子书</a></li>
+                        <li><a href="#">我的拍卖</a></li>
+                        <li><a href="#">我的理财</a></li>
+                    </ul>
+                </dd>
+                <dd><a href="#">购买过的店铺</a>
+                <dd><a href="#">我的收藏</a>
+                <dd><a href="#">我的积分</a>
+                <dd><a href="#">我的优惠信息</a>
+            </dl>
+        </div> -->
+        <!-- /左侧菜单 -->
+        <!-- 右侧内容 -->
+        <div class="main">
+            <div class="header-tab">
+                <ul>
+                    <li><a href="#" class="current">我的购物车</a></li>
+                    <li><a href="#">已买到的宝贝</a></li>
+                    <li><a href="#">我的收藏</a></li>
+                </ul>
+            </div>
+            <!-- 右侧选项卡菜单 -->
+            <div class="main-tab">
+                <ul>
+                    <li class="current"><a href="#">所有订单</a><span>&#124;</span></li>
+                    <li><a href="#">待付款</a><span>&#124;</span></li>
+                    <li><a href="#">待发货</a><span>&#124;</span></li>
+                    <li><a href="#">待收货</a><span>&#124;</span></li>
+                    <li><a href="#">待评价</a><em class="ml5 orange">1</em><span>&#124;</span></li>
+                    <li><a href="#">分阶段</a><span>&#124;</span></li>
+                </ul>
+            </div>
+            <!-- /右侧选项卡菜单 -->
+            <!-- 搜索 -->
+            <div class="filter">
+                <form action="" method="">
+                    <div>
+                        <p class="filter-search">
+                            <input type="text" placeholder="输入商品标题或订单号进行搜索" value="" class="input" />
+                            <input type="submit" value="订单搜索" class="button" />
+                        </p>
+                        <span class="ml10 pointer j-show">更多搜索条件</span>
+                    </div>
+                    <div class="j-showContent none">
+                        <div class="filter-condition">
+                            <p>订单类型：
+                                 <select name="type" id="">
+                                    <option value="">全部订单</option>
+                                    <option value="">机票订单</option>
+                                    <option value="">数字订单</option>
+                                    <option value="">理财订单</option>
+                                </select>
+                            </p>
+                            <p>评价状态：
+                                <select name="review" id="">
+                                    <option value="">全部</option>
+                                    <option value="">需我评价</option>
+                                    <option value="">我已评价</option>
+                                    <option value="">对方已评</option>
+                                    <option value="">双方已评</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="filter-condition">
+                            <p>成交时间：
+                                <input class="j-startTime" type="text" name="startTime" value="" />&nbsp;到&nbsp;<input class="j-endTime" type="text" name="endTime" value="" /></p>
+                            <p>交易状态：
+                                <select name="trade" id="">
+                                    <option value="">全部</option>
+                                    <option value="">等待买家付款</option>
+                                    <option value="">付款确认中</option>
+                                    <option value="">买家已付款</option>
+                                    <option value="">卖家已发货</option>
+                                    <option value="">交易成功</option>
+                                    <option value="">交易关闭</option>
+                                    <option value="">退款中的订单</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="filter-condition">
+                            <p>卖家昵称：
+                                <input class="w160" type="text" name="nickname" value="" /></p>
+                            <p>售后服务：
+                                <select name="service" id="">
+                                    <option value="">全部</option>
+                                    <option value="">已投诉</option>
+                                    <option value="">退款中</option>
+                                </select>
+                            </p>
+                        </div>
+                        <p><span class="filter-btn">搜索</span></p>
+                    </div>
+                </form>
+            </div>
+            <!-- /搜索 -->
+            <!-- 订单列表 -->
+            <div class="orderList">
+                <div class="title-order">
+                    <div class="order-left">
+                        <div class="w420">宝贝</div>
+                        <div class="w80">单价(元)</div>
+                        <div class="w80">数量</div>
+                    </div>
+                    <div class="order-right">
+                        <div class="w130">商品操作</div>
+                        <div class="w130">实付款(元)</div>
+                        <div class="w130 pr">
+                            <span class="status j-show">交易状态<i class="glyphicon glyphicon-triangle-bottom ml5 gray"></i></span>
+                            <ul class="statusList none j-showContent">
+                                <li class="current">交易状态</li>
+                                <li>等待买家付款</li>
+                                <li>付款确认中</li>
+                                <li>买家已付款</li>
+                                <li>卖家已发货</li>
+                                <li>交易成功</li>
+                                <li>交易关闭</li>
+                                <li>退款中的订单</li>
+                            </ul>
+                        </div>
+                        <div class="w130">交易操作</div>
+                    </div>
+                </div>
+                <div class="operate">
+                    <div class="all">
+                        <label><input type="checkbox" name="choiceAll" value="" />全选</label>
+                        <a href="#">合并付款</a>
+                        <a href="#">合并代付</a>
+                        <a href="#" data-toggle="modal" data-target="#myModal">批量确认收货</a>
+                    </div>
+                    <div class="next-page">
+                        <span class="gray"><i class="glyphicon glyphicon-triangle-left"></i></span>
+                        <span>下一页<i class="glyphicon glyphicon-triangle-right orange ml5"></i></span>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="title-detail">
+                        <div class="order-left">
+                            <div class="w420 tl"><input type="checkbox" value="" name="product[]" /><em class="mr15 ml5">2015-08-29</em>订单号：123456789912545</div>
+                            <div class="w160 elimit5"><a href="#" title="广东联通框架大发即可看电视">广东联通框架大发即可看电视</a></div>
+                        </div>
+                        <div class="order-right">
+                            <div class="w390">和我联系</div>
+                            <div class="w130 tr">
+                                <i class="glyphicon glyphicon-share pointer" title="分享"></i>
+                                <i class="glyphicon glyphicon-flag pointer" title="编辑标记信息，仅自己可见"></i>
+                                <i class="glyphicon glyphicon-trash pointer" title="删除订单"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-detail">
+                        <div class="order-left">
+                            <div class="w100"><a href="#"><img class="img-responsive" src="../images/pages/order.png" alt="订单图片"></a></div>
+                            <div class="w320 tl">
+                                <p class="mb10"><a href="#" class="climit2">【广东联通官方旗舰店】 100元话费充值 广东联通100元面值自助充</a></p>
+                                <p>
+                                    <img src="../images/icon-real.png" alt="如实描述">
+                                    <img src="../images/icon-real2.png" alt="假一赔三">
+                                    <img src="../images/icon-real3.png" alt="正品保障">
+                                </p>
+                            </div>
+                            <div class="w80">99.5</div>
+                            <div class="w80">1</div>
+                        </div>
+                        <div class="order-right">
+                            <div class="w130"><p><a href="#">申请售后</a></p><p><a href="#">投诉卖家</a></p></div>
+                            <div class="w130"><p>99.5</p><p>(自动充值)</p></div>
+                            <div class="w130"><p><a href="#">交易成功</a></p><p><a href="#">订单详情</a></p></div>
+                            <div class="w130"><p><span class="btn btn-primary">评价</span></p><p><a href="#">再次购买</a></p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="title-detail">
+                        <div class="order-left">
+                            <div class="w420 tl"><input type="checkbox" value="" name="product[]" /><em class="mr15 ml5">2015-08-29</em>订单号：123456789912545</div>
+                            <div class="w160 elimit5"><a href="#" title="广东联通框架大发即可看电视">广东联通框架大发即可看电视</a></div>
+                        </div>
+                        <div class="order-right">
+                            <div class="w390">和我联系</div>
+                            <div class="w130 tr">
+                                <i class="glyphicon glyphicon-share pointer" title="分享"></i>
+                                <i class="glyphicon glyphicon-flag pointer" title="编辑标记信息，仅自己可见"></i>
+                                <i class="glyphicon glyphicon-trash pointer" title="删除订单"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-detail">
+                        <div class="order-left">
+                            <div class="w100"><a href="#"><img class="img-responsive" src="../images/pages/order.png" alt="订单图片"></a></div>
+                            <div class="w320 tl">
+                                <p class="mb10"><a href="#" class="climit2">【广东联通官方旗舰店】 100元话费充值 广东联通100元面值自助充</a></p>
+                                <p>
+                                    <img src="../images/icon-real.png" alt="如实描述">
+                                    <img src="../images/icon-real2.png" alt="假一赔三">
+                                    <img src="../images/icon-real3.png" alt="正品保障">
+                                </p>
+                            </div>
+                            <div class="w80">99.5</div>
+                            <div class="w80">1</div>
+                        </div>
+                        <div class="order-right">
+                            <div class="w130"><p><p><a href="#">投诉卖家</a></p></div>
+                            <div class="w130"><p>298.5</p><p>(自动充值)</p></div>
+                            <div class="w130"><p><a href="#">交易成功</a></p><p><a href="#">订单详情</a></p></div>
+                            <div class="w130"><p><span class="btn btn-primary">评价</span></p><p><a href="#">再次购买</a></p></div>
+                        </div>
+                    </div>
+                    <div class="content-detail">
+                        <div class="order-left">
+                            <div class="w100"><a href="#"><img class="img-responsive" src="../images/pages/order.png" alt="订单图片"></a></div>
+                            <div class="w320 tl">
+                                <p class="mb10"><a href="#" class="climit2">【广东联通官方旗舰店】 100元话费充值 广东联通100元面值自助充</a></p>
+                                <p>
+                                    <img src="../images/icon-real.png" alt="如实描述">
+                                    <img src="../images/icon-real2.png" alt="假一赔三">
+                                    <img src="../images/icon-real3.png" alt="正品保障">
+                                </p>
+                            </div>
+                            <div class="w80">99.5</div>
+                            <div class="w80">1</div>
+                        </div>
+                        <div class="order-right">
+                            <div class="w130"><p><a href="#">投诉卖家</a></p></div>
+                            <div class="w390"></div>
+                        </div>
+                    </div>
+                    <div class="content-detail">
+                        <div class="order-left">
+                            <div class="w100"><a href="#"><img class="img-responsive" src="../images/pages/order.png" alt="订单图片"></a></div>
+                            <div class="w320 tl">
+                                <p class="mb10"><a href="#" class="climit2">【广东联通官方旗舰店】 100元话费充值 广东联通100元面值自助充100元话费充值 广东联通100元面值自助充100元话费充值 广东联通100元面值自助充100元话费充值 广东联通100元面值自助充</a></p>
+                                <p>
+                                    <img src="../images/icon-real.png" alt="如实描述">
+                                    <img src="../images/icon-real2.png" alt="假一赔三">
+                                    <img src="../images/icon-real3.png" alt="正品保障">
+                                </p>
+                            </div>
+                            <div class="w80">99.5</div>
+                            <div class="w80">1</div>
+                        </div>
+                        <div class="order-right">
+                            <div class="w130"><p><a href="#">投诉卖家</a></p></div>
+                            <div class="w390"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /订单列表 -->
+            <!-- 分页 -->
+            <div class="page">
+                <ul class="pagination">
+                    <li class="disabled">
+                      <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                      <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                </ul>
+                <span>共5页，</span>
+                <span class="mr5">到第<input class="input" type="text" name="page" value="1" />页</span>
+                <input class="btn-skip" type="button" value="确定" name="skip" />
+            </div>
+            <!-- 分页 -->
+        </div>
+        <!-- /右侧内容 -->
+    </div>
+    <!-- /中间内容 -->
+    <!-- 底部版权 -->
+    <div class="footer"></div>
+    <!-- /底部版权 -->
+    <!-- 没有符合搜索条件的提示 -->
+    <div class="no-result none">没有符合搜索条件的宝贝，请尝试其他搜索条件。</div>
+    <!-- /没有符合搜索条件的提示 -->
+    <!-- 批量确认收货弹窗 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <p>提醒您：您有1笔订单不支持批量确认收货</p>
+            <p><a href="#" class="link-blue">返回重新选择</a>或继续对以下订单<span class="modal-btn">批量确认收货</span></p>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid table">
+                <div class="row table-title">
+                    <div class="col-xs-2">2015-09-15</div>
+                    <div class="col-xs-6">订单号：11942512258881245325</div>
+                    <div class="col-xs-4"><a href="#" class="elimit5">博士眼镜官方旗舰店</a></div>
+                </div>
+                <div class="row table-body">
+                    <div class="col-xs-2"><a href="#"><img class="img-responsive" src="../images/pages/order.png" /></a></div>
+                    <div class="col-xs-4">
+                        <p class="climit2"><a href="#">博士眼镜看打开撒付款看到发觉时刻看到风景撒看风景框架方式</a></p>
+                        <p class="gray">颜色分类：棕色</p>
+                        <p>
+                            <img src="../images/icon-real.png" alt="如实描述">
+                            <img src="../images/icon-real2.png" alt="假一赔三">
+                            <img src="../images/icon-real3.png" alt="正品保障">
+                        </p>
+                    </div>
+                    <div class="col-xs-2"><p class="text-delete">288.00</p><p>106.00</p></div>
+                    <div class="col-xs-2"><p>106.00</p><p>(含运费：0.00)</p></div>
+                    <div class="col-xs-2">
+                        <p>快件已签收</p>
+                        <p><a href="#">订单详情</a></p>
+                        <p><a class="link-orange" href="#">查看物流</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid table">
+                <div class="row table-title">
+                    <div class="col-xs-2">2015-09-15</div>
+                    <div class="col-xs-6">订单号：1194251225888</div>
+                    <div class="col-xs-4"><a href="#" class="elimit5">博士眼镜官方旗舰店</a></div>
+                </div>
+                <div class="row table-body">
+                    <div class="col-xs-2"><a href="#"><img class="img-responsive" src="../images/pages/order.png" /></a></div>
+                    <div class="col-xs-4">
+                        <p class="climit2"><a href="#">博士眼镜看打开撒付款看到发觉时刻看到风景撒看风景框架方式</a></p>
+                        <p class="gray">颜色分类：棕色</p>
+                        <p>
+                            <img src="../images/icon-real.png" alt="如实描述">
+                            <img src="../images/icon-real2.png" alt="假一赔三">
+                            <img src="../images/icon-real3.png" alt="正品保障">
+                        </p>
+                    </div>
+                    <div class="col-xs-2"><p class="text-delete">288.00</p><p>106.00</p></div>
+                    <div class="col-xs-2"><p>318.00</p><p>(含运费：0.00)</p></div>
+                    <div class="col-xs-2">
+                        <p>快件已签收</p>
+                        <p><a href="#">订单详情</a></p>
+                        <p><a class="link-orange" href="#">查看物流</a></p>
+                    </div>
+                </div>
+                <div class="row table-body">
+                    <div class="col-xs-2"><a href="#"><img class="img-responsive" src="../images/pages/order.png" /></a></div>
+                    <div class="col-xs-4">
+                        <p class="climit2"><a href="#">博士眼镜看打开撒付款看到发觉时刻看到风景撒看风景框架方式</a></p>
+                        <p class="gray">颜色分类：棕色</p>
+                        <p>
+                            <img src="../images/icon-real.png" alt="如实描述">
+                            <img src="../images/icon-real2.png" alt="假一赔三">
+                            <img src="../images/icon-real3.png" alt="正品保障">
+                        </p>
+                    </div>
+                    <div class="col-xs-6"><p class="text-delete">288.00</p><p>106.00</p></div>
+                </div>
+                <div class="row table-body">
+                    <div class="col-xs-2"><a href="#"><img class="img-responsive" src="../images/pages/order.png" /></a></div>
+                    <div class="col-xs-4">
+                        <p class="climit2"><a href="#">博士眼镜看打开撒付款看到发觉时刻看到风景撒看风景框架方式</a></p>
+                        <p class="gray">颜色分类：棕色</p>
+                        <p>
+                            <img src="../images/icon-real.png" alt="如实描述">
+                            <img src="../images/icon-real2.png" alt="假一赔三">
+                            <img src="../images/icon-real3.png" alt="正品保障">
+                        </p>
+                    </div>
+                    <div class="col-xs-6"><p class="text-delete">288.00</p><p>106.00</p></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /批量确认收货弹窗 -->
+<script src="../../lib/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/jquery-ui/jquery-ui.min.js"></script>
+<script src="../../lib/jquery-ui/datepicker.zh-CN.js"></script>
+<script src="../../lib/timepicker/jquery-ui-timepicker-addon.min.js"></script>
+<script src="../../lib/timepicker/jquery-ui-timepicker-zh-CN.js"></script>
+<script src="../js/order.js"></script>
+</body>
+</html>

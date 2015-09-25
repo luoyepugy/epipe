@@ -1,0 +1,97 @@
+
+@import ../custom/mixin
+
+// 购物车列表
+.cartList
+  color: #3c3c3c
+  font-size: 12px
+  +link-basic(#3c3c3c, #ff6000, underline)
+// 购物车标题
+.title-cart
+  text-align: center
+  padding: 10px
+
+// 购物车内容
+.detail
+  margin-bottom: 10px
+// 颜色分类
+.color-info
+  color: #9c9c9c
+  margin-left: 15px
+.disabled
+  +skin-bgfg(#f0f0ef, #cdcdcd)
+  .order-left
+    +link(#ccc)
+  .color-info
+    color: #cdcdcd
+.title-detail
+  padding: 15px
+.content-detail
+  text-align: center
+  padding: 15px 0
+  border: 1px solid #ccc
+  border-bottom: 0
+  &:last-child
+    border-bottom: 1px solid #ccc
+  *
+    vertical-align: top
+  // 加减符号
+  .num-symbol
+    +skin-basic(#f0f0f0, #444, #e5e5e5)
+    +size(20px, 28px)
+    display: inline-block
+    line-height: 28px
+    font-size: 16px
+    cursor: pointer
+    &:hover
+      +skin-fgbd(#ff4000, #ff4000)
+  .num
+    border: 1px solid #aaa
+    width: 40px
+    line-height: 26px
+    text-align: center
+  p
+    line-height: 150%
+
+.highlight
+  background: #fff8e1
+
+
+
+// 结算
+.total
+  background: #e5e5e5
+  margin-top: 20px
+  .inline-left,
+  .inline-right
+    width: 593px
+    display: inline-block
+  .inline-left
+    a
+      margin-left: 15px
+  .inline-right
+    text-align: right
+  // 结算按钮
+  .btn-settle
+    +skin-bgfg(#e5e5e5, #8b8b8b)
+    +size(120px, 50px)
+    line-height: 50px
+    display: inline-block
+    text-align: center
+    font-size: 20px
+    cursor: pointer
+  .btn-settleOn
+    @extend .btn-settle
+    +skin-bgfg(#f22d00, #fff)
+
+
+// 购物车为空状态
+.empty
+  margin: 80px 0 80px 50px
+  +link-basic(#36c, #ff6000, underline)
+  font-size: 12px
+  background: url(/Content/images/shopping/cart.png) no-repeat
+  padding: 20px 0 20px 125px
+
+
+@import ../media-query

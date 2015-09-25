@@ -1,0 +1,143 @@
+
+@import ../custom/mixin
+
+// 确认收货地址
+.address
+  font-size: 12px
+  +link-basic(#36c, #f60, underline)
+    font-size: 12px
+    font-weight: normal
+
+// 支付地址列表
+.addressList
+  label
+    font-weight: normal
+  span
+    margin-left: 5px
+  li
+    +line-height(30px)
+    padding: 0 10px 0 100px
+    &:hover
+      background: #fff0e8
+      .default
+        display: inline-block
+    .add-hide 
+      display: none
+    *
+      vertical-align: middle
+
+  .current
+    +skin-bgbd(#fff0e8, #ff5500)
+    font-weight: bold
+    padding-left: 55px
+    .add-hide
+      display: inline-block
+
+  // 设置为默认收货地址
+  .default
+    display: none
+    margin-left: 15px
+  
+// 添加新地址
+.address-new
+  +inside-center(100px, 28px)
+  margin-left: 100px
+  +skin-bgbd(#fefefe, #bdbdbd)
+  display: block
+  cursor: pointer
+  margin-top: 10px
+
+// 小标题
+.title
+  border-bottom: 1px solid #f1f1f1
+  +line-height(30px)
+  margin-bottom: 20px
+  font-size: 15px
+  font-weight: bold
+
+// 确认支付方式
+.way
+  margin: 40px 0
+.wayList
+  padding-left: 50px
+  li
+    display: inline-block
+    width: 23%
+    margin-bottom: 10px
+  *
+    vertical-align: middle
+
+// 确认收货信息
+.infos
+  font-size: 12px
+  +link-basic(#36c, #f60, underline)
+  label
+    font-weight: normal
+    line-height: 20px
+.title-order
+  margin-bottom: 20px
+  border-bottom: 3px solid #b2d1ff
+  text-align: center
+  padding: 10px
+
+.detail
+  margin-bottom: 10px
+.title-detail
+  border-bottom: 1px dotted #80b2ff
+  padding: 10px
+.content-detail
+  text-align: center
+  padding: 15px 0
+
+// 订单信息列表
+.list
+  margin-bottom: 15px
+  *
+    vertical-align: middle
+// 给卖家留言
+.message
+  background: #f2f7ff
+  border-bottom: 1px solid #b2d1ff
+  padding: 15px
+  .textarea
+    border: 1px solid #8ab6dd
+    outline: none
+    padding-left: 5px
+    width: 445px
+    &:hover
+      border-color: #feac33
+  *
+    vertical-align: top
+
+// 店铺合计
+.shop-total
+  text-align: right
+  margin-top: 10px
+  padding-right: 50px
+
+// 提交
+.submit
+  text-align: right
+  .confirm
+    border: 1px solid #ff5500
+    padding: 10px
+    display: inline-block
+    min-width: 300px
+// 提交按钮
+.btn-submit 
+  +skin-bgfg(#f50, #fff)
+  +inside-center(125px, 36px)
+  width: 125px
+  font-size: 18px
+  display: inline-block
+  cursor: pointer
+  &:hover
+    background: #f42a00
+// 积分折扣
+.discount
+  border-bottom: 1px dotted #ccc
+  +line-height(35px)
+  label:first-of-type
+    margin-right: 30px
+
+@import ../media-query

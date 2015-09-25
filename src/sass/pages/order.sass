@@ -1,0 +1,222 @@
+
+@import ../custom/mixin
+
+// ------- 我的订单 -------
+
+// 字体图标
+.glyphicon-share,
+.glyphicon-flag,
+.glyphicon-trash
+  color: #989898
+  font-size: 16px
+  margin-left: 5px
+
+// 左侧菜单树
+// .menu-tree
+//   color: #000
+//   width: 110px
+//   float: left
+//   dt
+//     font-size: 15px
+//     color: #f40
+//     font-weight: normal
+//   dd
+//     font-size: 12px
+//   .current
+//     color: #f40
+//   a
+//     color: #000
+//     +line-height(28px)
+//     &:hover
+//       color: #f40
+//   ul
+//     padding-left: 10px
+
+// 右边主要内容
+.main
+  width: 100%
+
+ 
+// 过滤搜索
+.filter
+  margin: 20px 0
+  font-size: 12px
+.filter-search
+  border: 1px solid #bfbfbf
+  display: inline-block
+  width: 315px
+  .input
+    +input(235px)
+    padding-left: 5px
+    +line-height(26px)
+  .button
+    +button-autowidth(0 10px, #f5f5f5)
+    border-left: 1px solid #bfbfbf
+    +line-height(26px)
+    float: right
+
+// 过滤搜索条件
+.filter-condition
+  display: inline-block
+  margin-right: 100px
+  p
+    margin-top: 15px
+  input
+    +line-height(26px)
+    border: 1px solid #bfbfbf
+    padding-left: 5px
+    width: 160px
+  select
+    padding: 3px
+    width: 160px
+.filter-btn
+  +skin-bgfg(#f50, #fff)
+  margin-top: 15px
+  display: inline-block
+  +border-radius(4px)
+  cursor: pointer
+  padding: 5px 12px
+  &:hover
+    background: #f42a00
+    
+// 订单列表
+.orderList
+  color: #3c3c3c
+  font-size: 12px
+  +link-a(#3c3c3c, #ff6000)
+// 订单标题
+.title-order
+  margin-bottom: 20px
+  +skin-bgbd(#f5f5f5, #e8e8e8)
+  text-align: center
+  padding: 10px
+
+// 操作
+.operate
+  margin-bottom: 10px
+  .all
+    display: inline-block
+    width: 40%
+    a
+      margin-left: 15px
+
+// 无搜索结果
+.no-result
+  text-align: center
+  margin: 50px
+
+
+// 下一页
+.next-page
+  text-align: right
+  float: right
+  span
+    border: 1px solid #e8e8e8
+    cursor: pointer
+    padding: 3px 6px
+    display: inline-block
+
+// 交易状态
+.status
+  padding: 6px 0
+  cursor: pointer
+  display: inline-block
+  width: 100px
+  &:hover
+    border: 1px solid #bfbfbf
+.statusList
+  +skin-bgbd(#fff, #bfbfbf)
+  width: 100px
+  color: #666
+  text-align: left
+  +position(absolute, left, 15px, top, 40px)
+  li
+    +line-height(25px)
+    padding: 0 10px
+    cursor: pointer
+    &.current,
+    &:hover
+      +skin-bgfg(#52a0e5, #fff) 
+
+// 订单详细内容  
+.detail
+  border: 1px solid #e8e8e8
+  margin-bottom: 10px
+  &:hover
+    border-color: #bfbfbf
+    .glyphicon-share,
+    .glyphicon-flag
+      display: inline-block
+  .glyphicon-share,
+  .glyphicon-flag
+    display: none
+
+.title-detail
+  background: #f5f5f5
+  padding: 10px
+  text-align: center
+.content-detail
+  text-align: center
+  padding: 15px 0
+  p
+    line-height: 150%
+  *
+    vertical-align: middle
+  .btn-primary
+    +skin-basic(#fff, #3c3c3c, #e8e8e8)
+    &:hover
+      +skin-fgbd(#ff4401, #ff4401)
+
+// 分页
+.page
+  text-align: right
+  ul
+    display: inline-block
+    margin: 0
+  .btn-skip
+    border: 0
+    +skin-bgfg(#ff4401, #fff)
+    outline: none
+    padding: 5px 10px
+  .input
+    width: 50px
+    +line-height(25px)
+    padding-left: 5px
+    border: 1px solid #bfbfbf
+  *
+    vertical-align: middle
+
+// 弹窗表格
+.table
+  font-size: 12px
+  +link-a(#3c3c3c, #ff6000)
+  border: 1px solid #e7e7e7
+  margin-left: 0
+  margin-right: 0
+  .link-orange
+    +link(#ff3d12, #ff3d12)
+.table-title
+  background: #e7f9ff
+  +line-height(35px)
+  font-weight: 700
+.table .table-body
+  padding-bottom: 10px
+  margin-left: 0
+  margin-right: 0
+  .img-responsive
+    border: 1px solid #e7e7e7
+.text-delete
+  text-decoration: line-through
+  color: gray 
+.modal-btn
+  padding: 3px 7px
+  +skin-bgfg(#ff3d12,#fff)
+  +border-radius(4px)
+  cursor: pointer
+.link-blue
+  +link(#0042f6, #0042f6)
+.modal-header
+  font-size: 12px
+
+
+@import ../media-query

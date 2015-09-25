@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>优管网-支付</title>
+<link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="../css/epipe.css">
+<link rel="stylesheet" href="../css/common.min.css">
+<link rel="stylesheet" href="../css/pages/pay.min.css">
+</head>
+<body>
+    <!-- 头部导航 -->
+    <div class="header"></div>
+    <!-- /头部导航 -->
+    <!-- 中间内容 -->
+    <div class="content">
+        <!-- 确认收货地址 -->
+        <div class="address">
+            <h4 class="title">确认收货地址<a class="fr" href="#">管理收货地址</a></h4>
+            <ul class="addressList">
+                <li class="current">
+                    <span class="orange add-hide">寄送至</span>
+                    <label>
+                        <input type="radio" name="address" value="" checked="checked" />
+                        <span>广东省</span><span>深圳市</span><span>南山区</span>
+                        <span>深南大道绝世大厦12A</span><span>（王斌&nbsp;收）</span><span class="gray">13087541280</span>
+                    </label>
+                    <a class="default" href="#">设为默认收货地址</a> 
+                    <a class="fr add-hide" href="javascript:;" data-toggle="modal" data-target="#myModal">修改本地址</a> 
+                </li>
+                <li>
+                    <span class="orange add-hide">寄送至</span>
+                    <label>
+                        <input type="radio" name="address" value="" />
+                        <span>广东省</span><span>深圳市</span><span>南山区</span>
+                        <span>深南大道绝世大厦12A</span><span>（王斌&nbsp;收）</span><span class="gray">13087541280</span>
+                    </label>
+                    <a class="default" href="#">设为默认收货地址</a> 
+                    <a class="fr add-hide" href="javascript:;" data-toggle="modal" data-target="#myModal">修改本地址</a> 
+                </li>
+                <li>
+                    <span class="orange add-hide">寄送至</span>
+                    <label>
+                        <input type="radio" name="address" value="" />
+                        <span>广东省</span><span>深圳市</span><span>南山区</span>
+                        <span>深南大道绝世大厦12A</span><span>（王斌&nbsp;收）</span><span class="gray">13087541280</span>
+                    </label>
+                    <a class="default" href="#">设为默认收货地址</a> 
+                    <a class="fr add-hide" href="javascript:;" data-toggle="modal" data-target="#myModal">修改本地址</a> 
+                </li>
+            </ul>
+            <p><span class="address-new">+&nbsp;使用新地址</span></p>
+        </div>
+        <!-- /确认收货地址 -->
+        <!-- 确认支付方式 -->
+        <div class="way">
+          <h4 class="title">确认支付方式</h4>
+          <ul class="wayList">
+            <li>
+              <label>
+                <input class="mr5" type="radio" name="payWay" value="" checked="checked">
+                <img class="icon192x38" src="../images/Banks/alipay.jpg" alt="支付宝logo">
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="mr5" type="radio" name="payWay" value="">
+                <img class="icon192x38" src="../images/Banks/unionpay.jpg" alt="银联logo">
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="mr5" type="radio" name="payWay" value="">
+                <img class="icon192x38" src="../images/Banks/BOC.jpg" alt="中信银行logo">
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="mr5" type="radio" name="payWay" value="">
+                <img class="icon192x38" src="../images/Banks/CMB.jpg" alt="中国银行logo">
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="mr5" type="radio" name="payWay" value="">
+                <img class="icon192x38" src="../images/Banks/BCM.jpg" alt="交通银行logo">
+              </label>
+            </li>
+            <li>
+              <label>
+                <input class="mr5" type="radio" name="payWay" value="">
+                <img class="icon192x38" src="../images/Banks/ABC.jpg" alt="农业银行logo">
+              </label>
+            </li>
+          </ul>
+        </div>
+        <!-- /确认支付方式 -->
+        <!-- 确认收货信息 -->
+        <div class="infos">
+            <h4 class="title">确认订单信息</h4>
+            <div class="orderInfo">
+                <div class="title-order">
+                    <div class="order-left">
+                        <div class="w420">店铺宝贝</div>
+                        <div class="w130">单价(元)</div>
+                    </div>
+                    <div class="order-right">
+                        <div class="w130">数量</div>
+                        <div class="w220">优惠方式(元)</div>
+                        <div class="w130">小计（元）</div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="title-detail">
+                        <span class="mr20">店铺：<a href="#">宝里来专卖店</a></span><span class="mr10">卖家：<a href="#">宝里来专卖店</a></span><a href="#">和我联系</a>
+                    </div>
+                    <div class="content-detail">
+                        <div class="list">
+                            <div class="order-left">
+                                <div class="w100"><a href="#"><img class="img-responsive" src="../images/pages/order.png" alt="订单图片"></a></div>
+                                <div class="w320 tl">
+                                    <p class="mb10 ellipsis"><a href="#">925纯银猫眼耳环 长款防过敏女耳坠 韩版流苏耳饰品包邮 生日礼物</a></p>
+                                    <p class="gray"> 颜色分类：猫眼石都是白色，不是蓝色也不是绿色。不看清楚您别拍了！谢谢！</p>
+                                    <p>
+                                        <img src="../images/icon-real.png" alt="如实描述">
+                                        <img src="../images/icon-real2.png" alt="假一赔三">
+                                        <img src="../images/icon-real3.png" alt="正品保障">
+                                    </p>
+                                </div>
+                                <div class="w130">52.00</div>
+                            </div>
+                            <div class="order-right">
+                                <div class="w130">1</div>
+                                <div class="w220">已省32.10元，年终大促</div>
+                                <div class="w130 orange">19.90</div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="order-left">
+                                <div class="w100"><a href="#"><img class="img-responsive" src="../images/pages/order.png" alt="订单图片"></a></div>
+                                <div class="w320 tl">
+                                    <p class="mb10 ellipsis"><a href="#">925纯银猫眼耳环 长款防过敏女耳坠 韩版流苏耳饰品包邮 生日礼物</a></p>
+                                    <p class="gray"> 颜色分类：猫眼石都是白色，不是蓝色也不是绿色。不看清楚您别拍了！谢谢！</p>
+                                    <p>
+                                        <img src="../images/icon-real.png" alt="如实描述">
+                                        <img src="../images/icon-real2.png" alt="假一赔三">
+                                        <img src="../images/icon-real3.png" alt="正品保障">
+                                    </p>
+                                </div>
+                                <div class="w130">52.00</div>
+                            </div>
+                            <div class="order-right">
+                                <div class="w130">1</div>
+                                <div class="w220">已省32.10元，年终大促</div>
+                                <div class="w130 orange">19.90</div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="order-left">
+                                <div class="w100">给卖家留言：</div>
+                                <div class="w450"><textarea class="textarea" placeholder="选填：对本次交易的说明（建议填写已经和卖家达成一致的说明）" ></textarea></div>
+                            </div>
+                            <div class="order-right">
+                                <div class="w130"><p>运送方式：</p><p>运送险：</p></div>
+                                <div class="w220 tl pl30">
+                                    <p><label><input type="radio" name="" checked="checked" />普通配送</label>
+                                    <select name="" id="">
+                                        <option value="">快递&nbsp;免邮</option>
+                                    </select></p>
+                                    <p><label><input type="checkbox" name="" value="" />购买退货运费险，退货可赔付9元</label></p>
+                                    <p><label><input type="checkbox" name="" value="" />天猫会员专享，退货可赔9元</label></p>
+                                </div>
+                                <div class="w130"><p class="orange">0.00</p><p>0.50</p><p>0.00</p></div>
+                                <div class="shop-total">店铺合计(含运费)： <span class="f18">¥<b class="orange">19.90</b></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="title-detail">
+                        <span class="mr20">店铺：<a href="#">宝里来专卖店</a></span><span class="mr10">卖家：<a href="#">宝里来专卖店</a></span><a href="#">和我联系</a>
+                    </div>
+                    <div class="content-detail">
+                        <div class="list">
+                            <div class="order-left">
+                                <div class="w100"><a href="#"><img class="img-responsive" src="../images/pages/order.png" alt="订单图片"></a></div>
+                                <div class="w320 tl">
+                                    <p class="mb10 ellipsis"><a href="#">925纯银猫眼耳环 长款防过敏女耳坠 韩版流苏耳饰品包邮 生日礼物</a></p>
+                                    <p class="gray"> 颜色分类：猫眼石都是白色，不是蓝色也不是绿色。不看清楚您别拍了！谢谢！</p>
+                                    <p>
+                                        <img src="../images/icon-real.png" alt="如实描述">
+                                        <img src="../images/icon-real2.png" alt="假一赔三">
+                                        <img src="../images/icon-real3.png" alt="正品保障">
+                                    </p>
+                                </div>
+                                <div class="w130">52.00</div>
+                            </div>
+                            <div class="order-right">
+                                <div class="w130">1</div>
+                                <div class="w220">
+                                    <select name="" id="">
+                                        <option value="">已省4元：最爱淘好货</option>
+                                        <option value="">不使用优惠</option>
+                                    </select>
+                                </div>
+                                <div class="w130 orange">19.90</div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="order-left">
+                                <div class="w100">给卖家留言：</div>
+                                <div class="w450"><textarea class="textarea" placeholder="选填：对本次交易的说明（建议填写已经和卖家达成一致的说明）" ></textarea></div>
+                            </div>
+                            <div class="order-right">
+                                <div class="w130"><p>运送方式：</p><p>运送险：</p></div>
+                                <div class="w220 tl pl30">
+                                    <p><label><input type="radio" name="" checked="checked" />普通配送</label>
+                                    <select name="" id="">
+                                        <option value="">快递&nbsp;免邮</option>
+                                    </select></p>
+                                    <p><label><input type="checkbox" name="" value="" />购买退货运费险，退货可赔付9元</label></p>
+                                    <p><label><input type="checkbox" name="" value="" />天猫会员专享，退货可赔9元</label></p>
+                                </div>
+                                <div class="w130"><p class="orange">0.00</p><p>0.50</p><p>0.00</p></div>
+                                <div class="shop-total">店铺合计(含运费)： <span class="f18">¥<b class="orange">19.90</b></span></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="submit">
+                <p class="discount checkbox"><label><input type="checkbox" name="" value="" />使用天猫积分</label><span class="f18">¥0.00</span></p>
+                <p class="discount checkbox"><label><input type="checkbox" name="" value="" />使用天猫点券卡</label>结算时扣除</p>
+                <p class="checkbox"><label class="mr20"><input type="checkbox" name="" value="" />找人代付</label><label><input type="checkbox" name="" value="" />匿名购买</label></p>
+                <div class="confirm">
+                    <p class="mb10"><b>实付款：</b><span class="f20">¥<b class="orange">54.90</b></span></p>
+                    <p><b>寄送至：</b><span class="mr5">广东省</span><span class="mr5">深圳市</span><span class="mr5">南山区</span><span class="mr5">芒果网大厦505</span>   </p>
+                    <p><b>收货人：</b><span class="mr5">王斌</span><span class="mr5">13045828584</span></p>
+                </div>
+                <p><a class="mr30" href="#">返回购物车</a><span class="btn-submit">提交订单</span></p>
+            </div>
+        </div>
+        <!-- /确认收货信息 -->
+    </div>
+    <!-- /中间内容 -->
+    <!-- 底部版权 -->
+    <div class="footer"></div>
+    <!-- /底部版权 -->
+    <!-- 修改本地址弹窗表单 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">修改当前地址</h4>
+          </div>
+          <div class="modal-body f12">
+            <form class="form-horizontal" action="" method="">
+              <div class="form-group">
+                <label class="col-sm-2 control-label">所在地区</label>
+                <div class="col-sm-9">
+                  <div class="row">
+                      <div class="col-xs-4">
+                          <select class="form-control" name="" id="">
+                              <option value="">广东省</option>
+                              <option value="">湖北省</option>
+                          </select>
+                      </div>
+                      <div class="col-xs-4">
+                          <select class="form-control" name="" id="">
+                              <option value="">深圳市</option>
+                              <option value="">广州市</option>
+                          </select>
+                      </div>
+                      <div class="col-xs-4">
+                          <select class="form-control" name="" id="">
+                              <option value="">罗湖区</option>
+                              <option value="">南山区</option>
+                          </select>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-9 red none">错误提示信息</div>
+              </div>
+              <div class="form-group">
+                <label for="address" class="col-sm-2 control-label">详细地址</label>
+                <div class="col-sm-9">
+                  <textarea name="" id="address" class="form-control" rows="3" placeholder="建议您如实填写详细收货地址，例如街道名称，门牌号码，楼层和房间号等信息"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-9 red">错误提示信息</div>
+              </div>
+              <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">收货人姓名</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="name" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="mobile" class="col-sm-2 control-label">手机号码</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="mobile" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" name="setDefault">设置为默认收货地址
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">保存</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /修改本地址弹窗表单 -->
+<script src="../../lib/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

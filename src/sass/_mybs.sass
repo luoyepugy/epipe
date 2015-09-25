@@ -1,0 +1,40 @@
+
+@import custom/mixin
+
+
+// --------- 修改bootstrap框架样式 -----------
+
+// 分页
+.pagination > li > a,
+.pagination > li > span 
+  color: #000
+
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus 
+  color: #fff
+  background-color: #ff4401
+  border: 1px solid #ff4401
+
+
+// 弹窗表单样式
+.form-group
+.form-control,
+  .btn
+    border: 1px solid #ccc
+    border-radius: 4px
+
+// 输入框样式
+.input-group
+  .form-control
+    border: 1px solid #ccc
+    +border-radius(4px)
+
+// 表格
+.recover .row
+  margin-left: 0
+  margin-right: 0
