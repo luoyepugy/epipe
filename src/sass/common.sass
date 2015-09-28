@@ -68,8 +68,9 @@
 
 // 左侧个人信息菜单
 .side-menu
+  font-size: 16px
   .title
-    margin-bottom: 15px
+    margin-bottom: 16px
     border-bottom: 1px solid #aaa
   li
     +line-height(35px)
@@ -79,6 +80,18 @@
     &:hover,
     &.current
       +skin-basic(#aaa, #fff)
+
+.side-menu-xs
+  font-size: 16px
+  li
+    +inline-block
+    &:after
+      content: '|'
+      padding: 0 10px
+  a
+    &:hover,
+    &.current
+      color: #ff6600
 
 // 右边内容区
 .right-content
@@ -90,13 +103,20 @@
 
 // 统一标题
 .main-title
-  font-size: 14px
+  font-size: 15px
   +line-height(35px)
   border-bottom: 1px solid #aaa
+  a.current,
+  a:hover,
   span
     +skin-basic(#ff500b, #fff)
     display: inline-block
     padding: 0 20px
+  a
+    +skin-basic(#f2f2f2, #000, #ccc)
+    display: inline-block
+    padding: 0 20px
+    +line-height(35px)
   
 .inline
   display: inline-block
