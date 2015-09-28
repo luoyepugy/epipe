@@ -8,6 +8,8 @@
 // 字符限制
 +elimit(5)
 +elimit(25)
++elimit(15)
+
 
 .climit2
   max-height: 3em
@@ -48,7 +50,7 @@
     padding: 0 15px
     &:hover,
     &.current
-      +skin-bgfg(#ff500b, #fff)
+      +skin-basic(#ff500b, #fff)
     
 
 // 中间内容
@@ -76,7 +78,7 @@
     display: block
     &:hover,
     &.current
-      +skin-bgfg(#aaa, #fff)
+      +skin-basic(#aaa, #fff)
 
 // 右边内容区
 .right-content
@@ -92,11 +94,10 @@
   +line-height(35px)
   border-bottom: 1px solid #aaa
   span
-    +skin-bgfg(#ff500b, #fff)
+    +skin-basic(#ff500b, #fff)
     display: inline-block
     padding: 0 20px
   
-
 .inline
   display: inline-block
   
