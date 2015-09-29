@@ -5,7 +5,7 @@
 // @content扩展自定义样式
 //
   
-%table
+=table
   width: 100%
 
   th
@@ -17,29 +17,6 @@
     padding: .8em 0
     vertical-align: middle
 
-
-=table
-  @extend %table
-  @content
-
-
-
-// 编辑区表格，左侧为label，右侧为input或button
-//
-// 参数依次为（左侧宽度，右侧宽度）
-// @content扩展自定义样式
-//
-
-=edit-table($leftwidth, $rightwidth)  
-  .label
-    width: $leftwidth
-    text-align: right
-    padding-right: 10px
-    display: inline-block
-    
-  .label-content
-    width: $rightwidth
-
   @content
 
 
@@ -50,7 +27,7 @@
 // @content扩展自定义样式
 //
 
-=zebra-table($even-color, $odd-color)
+=table-zebra($even-color, $odd-color)
   background-color: $even-color
 
   tr:nth-of-type(even)

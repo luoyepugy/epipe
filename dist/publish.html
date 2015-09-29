@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>优管网-发布产品</title>
+</head>
+<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/dannyselect.min.css">
+<link rel="stylesheet" href="css/epipe.css">
+<link rel="stylesheet" href="css/common.min.css">
+<link rel="stylesheet" href="css/pages/publish.min.css">
+<body class="index-body">
+    <!-- 头部导航 -->
+    <div id="browser-detect" class="alert alert-warning alert-dismissible fade in hidden" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <strong>温馨提示：</strong> 您的浏览器版本太陈旧，为安全及良好的浏览体验，请更新IE9.0以上版本或使用更安全快速的谷歌浏览器（<small>快速通道：<a href="http://rj.baidu.com/soft/detail/14744.html" target="_blank">Chrome</a> | <a href="http://rj.baidu.com/soft/detail/23360.html" target="_blank">IE 11</a></small>）
+    </div>
+    <!-- /头部导航 -->
+    <!--页头-->
+        <div id="header" class="">
+            <div class="header-top hidden-sm hidden-xs">
+                <div class="container">
+                    <div class="class-row">
+                        <div class="left">欢迎来到优管网</div>
+                        <div class="right">
+
+        <div>
+            
+            请<a href="/Account/Login" id="loginLink">[登录]</a>
+            <a href="/Account/Register" id="signUpLink">[免费注册]</a>
+            <span>　服务热线：4000-948-666</span>
+        </div>
+
+        <input type="hidden" id="hdLayoutIsAuthenticated" value="false">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-3 hidden-sm hidden-xs">
+                        <a href="/">
+                            <img src="images/logo.jpg" />
+                        </a>
+                    </div>
+                    <div class="header-search col-md-6 col-sm-12 col-xs-12  hidden-sm hidden-xs">
+                        <div class="be-supplier">
+                            <div class="row-fluid">
+                                <div class="span12">
+                                    <div class="tabbable" id="tabs-110660">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active">
+                                                <a href="#panel-search0" name="aSearchType" data-tag="全站关键字" data-toggle="tab">全站搜索<span>　｜</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#panel-search1" name="aSearchType" data-tag="管道产品" data-toggle="tab">管道产品<span>　｜</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#panel-search2" name="aSearchType" data-tag="求购信息" data-toggle="tab">求购信息<span>　｜</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="#panel-search3" name="aSearchType" data-tag="企业名录" data-toggle="tab">企业搜索</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="panel-search">
+                                                <div class="input-group">
+                                                    <input type="text" id="input-search" class="form-control" placeholder="请输入全站关键字...">
+                                                    <span class="input-group-btn">
+                                                        <input type="hidden" id="hdSearchType" value="全站关键字" />
+                                                        <button id="btn-search" class="btn btn-primary" type="button">搜索</button>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-2 text-right hidden-sm hidden-xs">
+                        <a href="javascript:void(0)">
+                            <img src="images/Qrcode.jpg" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="menu in">
+                    <ul class="hidden-sm hidden-xs">
+                        <li class=""><a href="/">首页</a></li>
+                        <li><a href="/Cms-Doc-BiddingIndex">招投标信息</a></li>
+                        <li><a href="/Cms-Doc-Index/15040113424498">求购信息</a></li>
+                        <li><a href="/Home/Index">管道商城</a></li>
+                        <li><a href="/Cms-Doc-Index/zhanlanhuiyi">展览会议</a></li>
+                        <li><a href="/Cms-Doc-Index/15040109011314">新闻动态</a></li>
+                        <li><a href="/Cms-Doc-KnowledgeStoreIndex">管道知识库</a></li>
+                        <li><a href="/Cms-Doc-CommpanyStoreIndex">企业库</a></li>
+                        <li><a href="/Search/solution-0">解决方案</a></li>
+                        <li><a href="/Search/game-1">管道游戏</a></li>
+
+                    </ul>
+                    <div class="row">
+                        <div class="col-xs-4"><a href="/"><i class="icon-ep-b icon-5x"></i></a></div>
+                        <div class="col-xs-2">　</div>
+                        <div class="col-xs-6"><a href="/UserArea/Home/Message"><i class="icon-my icon-0x"></i></a>　　<span class="glyphicon-align-justify glyphicon" aria-hidden="true"></span>　　<span class="glyphicon-search glyphicon" aria-hidden="true"></span>　　　</div>
+                    </div>
+                </div>
+                <div class="covers"></div>
+            </div>
+        </div>
+    </div>
+    <!--页头 end-->
+    
+    <!-- 中间内容 -->
+    <div class="content2">
+        <div class="container publish">
+            <div class="row">
+                <h3 class="col-xs-10 col-xs-offset-1">发布产品</h3>
+            </div>
+            <!-- 基本资料 -->
+            <div class="row mb40">
+                <div class="publish-step col-xs-offset-1 col-xs-10">
+                    <div class="row">
+                        <div class="col-xs-1 num">1</div>
+                        <h4 class="col-xs-9">基本资料</h4>
+                    </div>
+                </div>
+                <div class="form-horizontal col-xs-offset-1 col-xs-10">
+                    <div class="form-group">
+                        <label for="inputTitle" class="col-xs-12 col-sm-2 control-label">标题</label>
+                        <div class="col-xs-10 col-sm-6">
+                            <input type="email" class="form-control" id="inputTitle" >
+                            <span class="red col-xs-10 none"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSKU" class="col-xs-12 col-sm-2 control-label">SKU</label>
+                        <div class="col-xs-10 col-sm-6">
+                            <input type="text" class="form-control" id="inputSKU" >
+                            <span class="red col-xs-10 none"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSort" class="col-xs-12 col-sm-2 control-label">分类</label>
+                        <div class="col-xs-10 col-sm-6">
+                            <div class="danny-select theme-default" id="xxx" >
+                                <div class="select-box">请选择...</div>
+                                <div class="select-drop">
+                                    <div id="layer-1" class="layer-item" >
+                                        <a class="target-item" data-target="layer-1-1">广东省</a>
+                                        <a class="target-item" data-target="layer-1-2">广西省</a>
+                                        <a class="target-item" data-target="layer-1-3">湖南省</a>                
+                                    </div>
+
+                                    <div id="layer-1-1" class="layer-item">
+                                        <a class="target-item return" data-target="layer-1">&lt;返回</a>
+                                        <a class="target-item" data-target="layer-1-1-1">深圳市</a>
+                                        <a data-target="layer-1-1-2">东莞市</a>
+                                        <a data-target="layer-1-1-3">广州市</a>
+                                    </div>
+
+                                    <div id="layer-1-1-1" class="layer-item">
+                                        <a class="target-item return" data-target="layer-1-1">&lt;返回</a>
+                                        <a class="value-item" data-value="futianqu">福田区</a>
+                                        <a class="value-item" data-value="luohu">罗湖区</a>
+                                        <a class="value-item" data-value="nanshan">南山区</a>
+                                    </div>            
+                                </div>
+                                <input type="hidden" class="select-value" name="select1" id="select1" value=" " />
+                            </div>
+                            <span class="red col-xs-10 none"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /基本资料 -->
+            <!-- 属性 -->
+            <div class="row mb40">
+                <div class="publish-step col-xs-offset-1 col-xs-10">
+                    <div class="row">
+                        <div class="col-xs-1 num">2</div>
+                        <h4 class="col-xs-6 col-sm-7 col-md-8">属性</h4>
+                        <div class="col-xs-12 col-sm-4 col-md-3"><a class="mr15" href="#">自定义模式</a><a href="#">默认模式</a></div>
+                    </div>
+                </div>
+                <div class="form-horizontal col-xs-offset-1 col-xs-10">
+                    <div class="form-group">
+                        <label class="col-xs-12 col-sm-2 control-label">口径</label>
+                        <div class="col-xs-12 col-sm-10">
+                            <ul class="button-attribute">
+                                <li class="current">S1000</li>
+                                <li>S1000</li>
+                                <li>S1000</li>
+                                <li>S1000</li>
+                                <li>S1000</li>
+                                <li>S1000</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-12 col-sm-2 control-label">壁厚</label>
+                        <div class="col-xs-12 col-sm-10">
+                            <ul class="button-attribute">
+                                <li>DN200</li>
+                                <li>DN200</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-12 col-sm-2 control-label">计价单位</label>
+                        <div class="col-xs-8 col-sm-6">
+                            <ul class="button-attribute">
+                                <li>公斤</li>
+                                <li>吨</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-12 col-sm-2 control-label">设置价格</label>
+                        <div class="col-xs-12 col-sm-9">
+                            <div class="publish-price">
+                                <ul class="button-attribute">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <div class="cb"><input type="text" name="inputPrice1" class="input" /><b class="red">元</b></div>
+                            </div>
+                            <div class="publish-price">
+                                <ul class="button-attribute">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <div class="cb"><input type="text" name="inputPrice2" class="input" /><b class="red">元</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /属性 -->
+            <!-- 图片 -->
+            <div class="row">
+                <div class="publish-step col-xs-offset-1 col-xs-10">
+                    <div class="row">
+                        <div class="col-xs-1 num">3</div>
+                        <h4 class="col-xs-9">图片</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb40">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="row publish-img">
+                        <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row">
+                                <div class="col-xs-6"><img class="img-responsive" src="images/pages/product-1.png" alt=""></div>
+                                <div class="col-xs-6">
+                                    <p><input type="radio" name="indexImg" id="indexImg1" /><label for="indexImg1">设为首图</label></p>
+                                    <p class="blue">上移</p>
+                                    <p class="blue">下移</p>
+                                    <p class="blue">删除</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row">
+                                <div class="col-xs-6"><img class="img-responsive" src="images/pages/product-1.png" alt=""></div>
+                                <div class="col-xs-6">
+                                    <p><input type="radio" name="indexImg" id="indexImg2" /><label for="indexImg2">设为首图</label></p>
+                                    <p class="blue">上移</p>
+                                    <p class="blue">下移</p>
+                                    <p class="blue">删除</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-10 col-sm-6 col-md-4 col-lg-3">
+                            <div class="row">
+                                <div class="col-xs-6"><img class="img-responsive" src="images/pages/product-1.png" alt=""></div>
+                                <div class="col-xs-6">
+                                    <p><input type="radio" name="indexImg" id="indexImg3" /><label for="indexImg3">设为首图</label></p>
+                                    <p class="blue">上移</p>
+                                    <p class="blue">下移</p>
+                                    <p class="blue">删除</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-10 col-sm-6 col-md-4 col-md-3">
+                            <div class="plus"><i class="glyphicon-plus"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /图片 -->
+            <!-- 描述 -->
+            <div class="row mb40">
+                <div class="publish-step col-xs-offset-1 col-xs-10">
+                    <div class="row">
+                        <div class="col-xs-1 num">4</div>
+                        <h4 class="col-xs-9">描述</h4>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- /描述 -->
+            <div class="row mb40">
+                <div class="col-xs-offset-1 col-xs-10 tc">
+                    <input type="button" value="立即发布" class="publish-button" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /中间内容 -->
+    <!--页脚-->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 logo-icon">
+                    <ul>
+                        <li>
+                            <a href="/"><i class="icon-ep-b icon-9x"></i></a>
+                        </li>
+                        <li id="footer-400"><a href="javascript:void(0)" rel="nofollow">4000-948-666</a></li>
+                    </ul>
+                </div>
+                <!--<div class="clearfix hidden-lg hidden-md"></div>-->
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 ">
+                    <ul>
+                        <li>公司信息</li>
+                        <li><a href="/Cms-Doc-Details/gongsijianjie">公司简介</a></li>
+                        <li><a href="/Cms-Doc-Details/gongsixinxi-311">联系我们</a></li>
+                        <li><a href="/Cms-Doc-Details/gongsixinxi-467">企业文化</a></li>
+                        <li><a href="/Cms-Doc-Details/gongsixinxi-032">商务合作</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 ">
+                    <ul>
+                        <li>供应商服务</li>
+                        <li><a href="/Cms-Doc-Details/hex">发布产品</a></li>
+                        <li><a href="/Cms-Doc-BiddingIndex">招投标查询</a></li>
+                        <li><a href="/Cms-Doc-Index/zhanlanhuiyi">展览会议</a></li>
+                        <li>&nbsp;</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 ">
+                    <ul>
+                        <li>采购商服务</li>
+                        
+                        <li><a href="/Cms-Doc-CommpanyStoreIndex">企业搜索</a></li>
+                        <li><a href="/Cms-Doc-KnowledgeStoreIndex">管道知识库</a></li>
+                        <li><a href="/Home/Index">管道商城</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+                    <ul>
+                        <li>服务说明</li>
+                        
+                        <li><a href="/Cms-Doc-Details/fuwushuoming">购买指南</a></li>
+                        <li><a href="/Cms-Doc-Details/shengming">法律声明</a></li>
+                        <li><a href="/Cms-Doc-Details/fuwushuoming-713">常见问题</a></li>
+                        <li>
+                            <a target=_blank href="/sitemap.html">网站导航</a>
+                        </li>
+                        <li>
+                            <a target=_blank href="/sitemap.xml">网站地图</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            
+
+            
+
+
+        <div class="friends">
+            <div class="title">友情链接：（申请友链QQ：524679167）</div>
+            <ul>
+
+                <li><a href="http://www.huahan.com">华瀚科技</a></li>
+                <li><a href="http://www.epipe.cn">优管网</a></li>
+                <li><a href="http://www.tgtpco.com/">310S不锈钢管</a></li>
+                <li><a href="http://www.yuhefamen.com">气动V型球阀</a></li>
+                <li><a href="http://www.ttpipe.cn/">钢丝网骨架塑料复合管</a></li>
+                <li><a href="http://www.jsxxgcgd.com/">FRPP管</a></li>
+                <li><a href="http://www.114la.com">114啦网址导航</a></li>
+                <li><a href="http://sojiancai.com/">中国建材网</a></li>
+                <li><a href=" http://www.alivv.com?rz">链接平台</a></li>
+                <li><a href="http://www.jsrongyao.com">化工管道</a></li>
+                <li><a href="http://www.qfwei.com">安防行业资讯网</a></li>
+                <li><a href="http://www.syppr.cn/">ppr水管十大品牌</a></li>
+                <li><a href="http://www.zbwill.com/">耐磨陶瓷管道</a></li>
+                <li><a href="http://www.41valve.com/">硬密封球阀</a></li>
+                <li><a href="http://www.ys316.com/">不锈钢装饰管</a></li>
+                <li><a href="http://www.ny36.com/">中国新能源网</a></li>
+            </ul>
+        </div>
+
+
+
+
+            <div class="text-bottom">© 2014-2015优管网 epipe.cn <a href="http://www.miibeian.gov.cn/">粤ICP备14066308号-1</a> 电子公告服务规则</div>
+        </div>
+    </div>
+    <!--页脚 end-->
+
+<script src="../lib/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/dannyselect.min.js"></script>
+<script>
+    $("#xxx").dannySelect();
+</script>
+</body>
+</html>

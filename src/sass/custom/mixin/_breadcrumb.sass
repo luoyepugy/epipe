@@ -1,4 +1,6 @@
 
+@import other
+
 // 面包屑（当前位置）
 //
 // @content扩展自定义样式
@@ -10,7 +12,7 @@
     line-height: $font-size * 2
     
     li
-      display: inline-block
+      +inline-block
       &:first-child:before
         content: ""
       &:before

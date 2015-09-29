@@ -31,4 +31,19 @@
   .inline-right 
     width: $right-width
     +inline-block
-  
+
+
+// display-inline-autowidth
+// 块状元素显示为一行布局，自动宽度
+//
+// 参数为（左边宽度， 右边宽度）
+//
+=display-inline-autowidth($left_width, $right_width)
+  .inline_left
+    +inline-block
+    width: auto
+    max-width: $left_width
+  .inline_right
+    +inline-block
+    width: auto
+    max-width: $right_width

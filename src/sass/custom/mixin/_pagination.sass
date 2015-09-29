@@ -4,7 +4,7 @@
 // @content扩展自定义样式
 //
 
-%pagination
+=pagination
   li,
   a
     display: inline-block
@@ -18,9 +18,7 @@
     padding: .2em .5em
     margin-right: .3em
     cursor: pointer
+    
+  @content
 
-
-=pagination
-  .pagination
-    @extend %pagination
-    @content
+    

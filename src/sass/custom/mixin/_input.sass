@@ -1,14 +1,13 @@
 
-// 圆角input输入框
+// input输入框
 //
-// 参数为（圆角半径值，宽度）
+// 参数为（宽度）
 // @content扩展自定义样式
 //
  
 %input-basic
   padding-left: 5px
   outline: none
-  padding: .4em
   border: 0
   font-size: 1em
 
@@ -16,27 +15,18 @@
 =input($width)
   @extend %input-basic
   width: $width
+  padding: .4em
   @content
+
+
+// input输入框
+//
+// 参数为（宽度，固定高度）
+// @content扩展自定义样式
+//
 
 =input-height($width, $height)
   @extend %input-basic
   width: $width
-  line-height: $height
-  padding: 0 0 0 5px
-  @content
-
-=radius-input($radius, $width)
-  @extend %input-basic
-  +border-radius($radius)
-  width: $width
-  @content
-
-
-
-=pill-input($height)
-  @extend %input-basic
   +line-height($height)
-  +border-radius($height)
-  padding-left: 1em
   @content
-  
