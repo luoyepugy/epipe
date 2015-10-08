@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>优管网-注册</title>
+<link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/common.min.css">
+<link rel="stylesheet" href="../css/pages/account.min.css">
+</head>
+<body>
+	<!-- 头部导航 -->
+	<div class="header">
+		<div class="container">
+			<div class="row header-nav">
+				<div class="col-xs-12">
+					<img src="../images/logo.png" alt="logo图标" class="img-responsive" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /头部导航 -->
+	<!-- 中间内容 -->
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 hidden-xs col-md-5 col-md-offset-1">
+					<img class="img-responsive" src="../images/register-banner.png" alt="注册图片">
+				</div>
+				<div class="col-xs-10 col-sm-6 col-md-5 col-lg-4 account-form  col-xs-offset-1 col-sm-offset-0">
+					<h3 class="tc">新用户注册</h3>
+					<form action="http://www.baidu.com" method="post" >
+						<div class="input-group">
+							<span class="input-group-addon glyphicon glyphicon-user"></span>
+							<input type="email" id="email" name="email" class="form-control" placeholder="请输入Email" required="required" oninput="checkAccount(this, 'email')" onpropertychange="checkAccount(this, 'email')" />
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon glyphicon glyphicon-lock"></span>
+							<input type="password" id="pwd" name="password" class="form-control" placeholder="请输入密码" required="required" pattern="\w{6,}" oninput="checkAccount(this, 'pwd')" onpropertychange="checkAccount(this, 'pwd')" />
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon glyphicon glyphicon-lock"></span>
+							<input type="password" id="conmPwd" name="confirmPassword" class="form-control" placeholder="请再次输入密码" required="required" oninput="confirmPwd(this)" onpropertychange="confirmPwd(this)" />
+						</div>
+						<p><input class="account-button" name="registerBtn" type="submit" value="注册" onclick="check()" /></p>
+						<p class="account-tip">我已有账号,<a href="login.html">登录</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /中间内容 -->
+	<!-- 底部版权 -->
+	<div class="footer">
+		<div class="container">
+			<div class="row copyright">
+				<ul>
+					<li><a href="#">关于我们</a><span class="division">&#124;</span></li>
+					<li><a href="#">联系客服</a><span class="division">&#124;</span></li>
+					<li><a href="#">招贤纳士</a><span class="division">&#124;</span></li>
+					<li><a href="#">隐私说明</a><span class="division">&#124;</span></li>
+					<li><a href="#">服务条款</a></li>
+				</ul>
+				<p>Copyright © 2015 epipe.cn allright reserved</p>
+			</div>
+		</div>
+	</div>
+	<!-- /底部版权 -->
+<script src="../../lib/jquery.min.js"></script>
+<script src="../js/pages/account.js"></script>
+</body>
+</html>

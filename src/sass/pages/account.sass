@@ -1,0 +1,130 @@
+
+@import ../custom/mixin
+
+
+// 注册／登录表单
+.account-form
+  .input-group-addon
+    background-color: #ccc
+    +border-radius(0)
+    top: 0
+  .form-control
+    +border-radius(0)
+  h3
+    font-size: 20px
+    margin-bottom: 20px
+  padding: 10px 35px
+  border: 1px solid #e2e2e2
+  .input-group
+    margin-bottom: 10px
+
+// 注册/登录提示信息
+.account-tip
+  font-size: 12px
+  color: #676767
+  text-align: right
+  margin-top: 15px
+
+// 注册/登录按钮
+.account-button
+  +skin-basic(#ff6c21, #fff)
+  font-size: 18px
+  border: 0
+  width: 100%
+  padding: 5px 0
+
+
+// 找回密码页面登录注册头部导航
+.header-account
+  ul
+    margin-bottom: 0
+  li
+    display: inline-block
+    +line-height(40px)
+    font-size: 12px
+  a
+    color: #333
+    &:hover
+      color: #333
+
+
+// 找回密码
+.findPwd
+  padding: 10px
+  margin-top: 20px
+  border: 1px solid #e2e2e2
+.findPwd-form
+  .button
+    @extend .account-button
+    width: auto
+    padding: 5px 15px
+    font-size: 15px
+    margin-bottom: 15px
+  .form-group
+    margin-top: 20px
+  .form-control
+    width: 80%
+
+.findPwd-title
+  font-size: 20px
+.findPwd-tip
+  padding: 10px
+  border-bottom: 1px solid #e2e2e2
+
+
+// 修改图标背景色
+.glyphicon-info-sign:before
+  color: #43b7df
+.glyphicon-user:before,
+.glyphicon-lock:before
+  color: #fff
+
+
+// 登录页面
+.login-auto
+  font-size: 12px
+  margin-bottom: 0
+  +line-height(25px)
+  label
+    font-weight: 100
+.login-other
+  border-top: 1px solid #e2e2e2
+  margin: 30px -30px 0 -30px
+  .text
+    @extend .account-tip
+    text-align: center
+    margin-top: 10px
+    +line-height(30px)
+  .btn
+    font-size: 12px
+    padding: 4px 10px
+  .link-gray
+    color: #676767
+    &:hover
+      color: #676767
+
+
+// ================ 账号相关页面修改bootstrap样式 ===============
+
+// 头部导航
+.navbar-default
+  border: 0
+.navbar-brand
+  padding: 0
+.navbar-header,
+.navbar-collapse
+  padding: 15px
+
+
+// 缩略图
+.thumbnail
+  border: 0
+  margin-bottom: 10px
+
+// 旋转木马焦点图
+.carousel-indicators 
+  bottom: -45px
+  li
+    background: #c2cac7
+  .active
+    background: #869791

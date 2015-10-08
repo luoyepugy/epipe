@@ -16,7 +16,11 @@
   overflow: hidden
   display: block
   line-height: 145%
-
+.climit2-fix
+  height: 3em
+  overflow: hidden
+  display: block
+  line-height: 145%
 
 // 字符一行
 .ellipsis
@@ -35,6 +39,8 @@
 +size-icon(192, 38)
 +size-icon(150)
 
+
+// ================ 个人中心相关页面 ===============
 
 // 主要头部选项卡
 .header-tab
@@ -187,3 +193,52 @@
 .w80
   width: 80px
   @extend .inline
+
+
+
+
+// ================ 账号相关页面 ===============
+
+// 头部导航
+.header-nav
+  padding: 20px 0
+  border-bottom: 1px solid #e1e1e1
+
+// 中间内容
+.content
+  margin-top: 40px
+  margin-bottom: 40px
+
+
+// 底部版权
+.copyright
+  font-size: 12px
+  color: #777
+  padding: 15px 0
+  border-top: 1px solid #e1e1e1
+  text-align: center
+  ul
+    width: 100%
+  li
+    display: inline-block
+  a
+    color: #777
+    &:hover
+      color: #333
+
+// 分割符
+.division
+  margin: 0 5px
+
+// 错误提示
+.error-tip
+  +position-basic(fixed, bottom, 40px, left, 50%)
+  width: 180px
+  color: #fff
+  background: rgba(0, 0, 0, .7)
+  opacity: .7
+  +border-radius(4px)
+  padding: 5px 7px
+  text-align: center
+  margin-left: -90px
+  font-size: .9em

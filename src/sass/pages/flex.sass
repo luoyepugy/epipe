@@ -1,0 +1,26 @@
+
+@import ../custom/mixin
+
+
+// css3动画
+@keyframes drive 
+  0%
+    transform: translateX(0)
+  100%
+    transform: translateX(1000px)
+
+
+.car
+  animation: drive 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite both alternate
+  animation-play-state: paused
+  &:hover
+    animation-play-state: running                          
+
+
+@media (min-width: 1000px)
+ 
+
+@media (max-width: 800px)
+
+
+@media (max-width: 500px)

@@ -1,0 +1,36 @@
+
+@import info
+@import comment
+@import inquiry
+
+// ================ 个人中心相关页面 ===============
+
+// 缩略图禁用样式
+.thumbnail-disable
+  +link-a(#bbb)
+  img
+    opacity: .6
+  .caption
+    color: #ccc
+
+
+// 上传图片150x150
+.upload-img
+  +inside-center(150px)
+  border: 1px dashed #ccc
+  font-size: 24px
+  color: #ccc
+  cursor: pointer
+
+
+
+@media (max-width: 768px)
+  .main-title
+    margin-top: 35px
+  .right-content
+    padding: 15px
+  .user-card
+    width: 400px
+    padding: 10px
+    .inline-right
+      width: 205px
