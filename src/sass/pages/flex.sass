@@ -16,9 +16,42 @@
   &:hover
     animation-play-state: running                          
 
+.border-img
+  border: 13px solid orange
+  +size(100px)
+  border-image: url(../../images/qq.jpg) 17/6 14px space
 
-@media (min-width: 1000px)
- 
+
+.background
+  background-origin: padding-box
+  padding: 20px
+  border: 50px solid rgba(0, 0,0 ,.5)
+  background-clip: padding-box
+  outline: 15px dashed rgba(0, 0,255 ,.5)
+  background-size: cover
+  +position(fixed)
+  min-width: 1024px
+  min-height: 100%
+  +size(100%, auto)
+  height: 100%
+  z-index: -1
+
+.red
+  +size(200px)
+  background: rgba(red, .5)
+.yellow
+  +size(200px)
+  background: rgba(green, .5)
+  margin: -100px 0 0 50px
+.blue
+  +size(200px)
+  background: rgba(blue, .5)
+  margin: -250px 0 0 100px
+
+@media (max-width: 1024px)
+  .background
+    left: 50%
+    margin-left: -512px
 
 @media (max-width: 800px)
 

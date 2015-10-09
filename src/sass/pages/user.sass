@@ -16,11 +16,19 @@
 
 // 上传图片150x150
 .upload-img
-  +inside-center(150px)
+  +size(150px)
   border: 1px dashed #ccc
   font-size: 24px
   color: #ccc
   cursor: pointer
+  position: relative
+  i
+    +inside-center(150px)
+    +position() 
+    z-index: 0
+  img
+    position: relative
+    z-index: 1
 
 
 
