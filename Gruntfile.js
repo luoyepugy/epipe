@@ -54,6 +54,15 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        autoprefixer: {
+            options: {
+                browsers: ['last 2 versions', 'ie 8', 'ie 9'],
+                map: false
+            },
+            sass: {
+                src: 'dist/css/pages/*.min.css'
+            }
+        },
         imagemin: {
             dist: {
                 options: {
@@ -74,7 +83,7 @@ module.exports = function(grunt) {
 	        },
             css: {
                 files: ['**/*.sass'],
-                tasks: ['sass']
+                tasks: ['sass','autoprefixer']
             },
             js: {
                 files: 'src/coffee/**/*.coffee',
@@ -84,6 +93,7 @@ module.exports = function(grunt) {
     });
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-coffee');
+    grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-uglify');

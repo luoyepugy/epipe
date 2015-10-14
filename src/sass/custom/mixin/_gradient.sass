@@ -1,0 +1,39 @@
+
+
+// 渐变条纹
+//
+// 参数依次为（背景颜色，渐变角度 0-90deg，背景颜色间距 实际为位置，偶数行背景色）
+//
+=gradient-zebra($bg, $angle: 0deg, $step: 10%, $even-bg: rgba(255,255,255,.2)) 
+  background-image: repeating-linear-gradient($angle, $even-bg $step, transparent $step, transparent $step*2, $even-bg $step*2, $even-bg $step*3, transparent $step*3)
+  background-color: $bg
+
+
+// 渐变菱形
+//
+// 参数依次为（背景颜色，渐变角度 0-90deg，背景颜色间距 有两个值，偶数行背景色）
+//
+=gradient-diamond($bg, $angle: 45deg, $size: 20px 20px, $even-bg: rgba(255,255,255,.2)) 
+  background-image: linear-gradient($angle, $even-bg 25%, transparent 25%, transparent), linear-gradient(-$angle, $even-bg 25%, transparent 25%, transparent),linear-gradient($angle, transparent 75%, $even-bg 75%),linear-gradient(-$angle, transparent 75%, $even-bg 75%)
+  background-color: $bg
+  background-size: $size
+
+
+// 渐变网格
+//
+// 参数依次为（背景颜色，渐变角度 0-90deg，背景颜色间距 实际为位置，偶数行背景色）
+//
+=gradient-grid($bg, $angle: 0deg, $step: 10%, $even-bg: rgba(255,255,255,.2)) 
+  background-image: repeating-linear-gradient($angle, $even-bg $step, transparent $step, transparent $step*2, $even-bg $step*2, $even-bg $step*3, transparent $step*3), repeating-linear-gradient(90+$angle, $even-bg $step, transparent $step, transparent $step*2, $even-bg $step*2, $even-bg $step*3, transparent $step*3)
+  background-color: $bg
+
+
+// 渐变
+//
+// 参数依次为（渐变类型，是否重复，颜色参数...）
+//
+=gradient($type, $repeat: no, $color...)
+  @if $repeat == yes 
+    background-image: repeating-#{$type}-gradient($color)
+  @else
+    background-image: #{$type}-gradient($color)
