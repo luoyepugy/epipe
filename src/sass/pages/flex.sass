@@ -55,13 +55,17 @@
   background-repeat: no-repeat
   border: 3px solid green
 .yellow
-  +size(200px)
-  +linear-gradient-diamond(green)
-  
+  +size(300px, 200px)
+  +gradient-diamond(green)
+
 .blue
-  +size(200px)
   +gradient(radial, yes, circle at left, green 10%, red 20%, blue 30%)
   color: #ccc
+  +shape-radius(trapezoid,200px, 300px)
+  overflow: hidden
+  border: 1px solid black
+
+  
 
 // 梯形
 .tab
@@ -119,8 +123,10 @@
   border-image-width: 15px
   border-image-outset: 0px
   border-image-repeat: space
-  +linear-gradient-grid(green, 20deg, 20%)
+  +gradient-grid(green, 20deg, 20%)
   background-clip: padding-box
+  +box-shadow-curved(28deg, 11deg, 23px)
+  margin-bottom: 50px
 
 
 

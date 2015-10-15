@@ -60,7 +60,7 @@ module.exports = function(grunt) {
                 map: false
             },
             sass: {
-                src: 'dist/css/pages/*.min.css'
+                src: 'dist/css/**/*.min.css'
             }
         },
         imagemin: {
