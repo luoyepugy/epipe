@@ -35,8 +35,14 @@
   height: $height
   @if $type == circle
     border-radius: 50%
-  @else if $type == ellipse
-    border-radius: 50% 50% 0 0 / 100% 100% 0 0
+  @else if $type == ellipse-top
+    border-radius: 50% / 100% 100% 0 0
+  @else if $type == ellipse-right
+    border-radius: 0 100% 100% 0 / 50%
+  @else if $type == ellipse-bottom
+    border-radius: 50% / 0 0 100% 100%
+  @else if $type == ellipse-left
+    border-radius: 100% 0 0 100% / 50%
   @else if $type == parallelogam
     border-radius: 30% 5% / 90% 10%
   @else if $type == trapezoid

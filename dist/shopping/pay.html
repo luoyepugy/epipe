@@ -239,7 +239,7 @@
                     <p><b>寄送至：</b><span class="mr5">广东省</span><span class="mr5">深圳市</span><span class="mr5">南山区</span><span class="mr5">芒果网大厦505</span>   </p>
                     <p><b>收货人：</b><span class="mr5">王斌</span><span class="mr5">13045828584</span></p>
                 </div>
-                <p><a class="mr30" href="#">返回购物车</a><span class="btn-submit">提交订单</span></p>
+                <p><a class="mr30" href="#" >返回购物车</a><span class="btn-submit"  data-toggle="modal" data-target="#pay">提交订单</span></p>
             </div>
         </div>
         <!-- /确认收货信息 -->
@@ -327,7 +327,63 @@
       </div>
     </div>
     <!-- /修改本地址弹窗表单 -->
+    <!-- 找人代付弹窗 -->
+    <div class="modal fade" id="pay" tabindex="-2" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header pay-modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <span>1、提交代付申请<em class="ml15 mr15">&gt;</em></span>
+            <span>2、通知好友来支付宝付款</span>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal" action="" method="">
+              <div class="form-group">
+                <label for="id" class="col-sm-2 control-label">好友账户</label>
+                <div class="col-sm-9 pr">
+                  <input type="text" class="form-control" id="id" />
+                  <div class="down-panel none j-panel">
+                      <ul>
+                          <li>刘凯(13054845812)</li>
+                          <li>刘旋(13054845812)</li>
+                          <li>刘凯(13054845812)</li>
+                          <li>刘旋(13054845812)</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message" class="col-sm-2 control-label">留言</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control" rows="3" id="message" placeholder="选填，感谢、撒娇、请求都可以"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-default">请他付款</button>
+                  </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /找人代付弹窗 -->
 <script src="../../lib/jquery.min.js"></script>
 <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $('#id').focus(function() {
+        var len = $('.j-panel li').length;
+        if(len > 0) {
+            $('.j-panel').removeClass('none');
+        } else {
+            return false;
+        }
+    });
+    $('.j-panel li').click(function() {
+        $('#id').val($(this).text());
+        $('.j-panel').addClass('none');
+    });
+</script>
 </body>
 </html>

@@ -55,16 +55,24 @@
   background-repeat: no-repeat
   border: 3px solid green
 .yellow
-  +size(300px, 200px)
-  +gradient-diamond(green)
+  height: 200px
+  +gradient-across2(orange, 45deg, 5%, rgba(0,0,0,.2))
+
 
 .blue
   +gradient(radial, yes, circle at left, green 10%, red 20%, blue 30%)
-  color: #ccc
+  color: #000
+  +shape-radius(ellipse-bottom,200px, 300px)
+  overflow: hidden
+  border: 1px solid black
+.blue2
   +shape-radius(trapezoid,200px, 300px)
   overflow: hidden
   border: 1px solid black
-
+  color: #000
+  background: url(../../images/login-banner.jpg) no-repeat
+  background-clip: content-box
+  
   
 
 // 梯形
@@ -114,7 +122,7 @@
       z-index: -2
 
 .tab-content
-  +size(300px, 200px) 
+  +size(400px, 300px) 
   border: 15px solid #965025
   color: #fff
   font-size: 16px
@@ -123,10 +131,42 @@
   border-image-width: 15px
   border-image-outset: 0px
   border-image-repeat: space
-  +gradient-grid(green, 20deg, 20%)
+  +gradient-across(green, 20deg, 20%)
   background-clip: padding-box
   +box-shadow-curved(28deg, 11deg, 23px)
   margin-bottom: 50px
+
+
+
+.testWrap
+  margin: 10px
+  text-align: center
+  color: #ccc
+  text-shadow: 1px 1px 1px rgba(0,0,0,.3)
+  background: lighten(orange, 20%)
+
+
+
+
+$css-blend-modes: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion
+
+@for $i from 1 through 12
+  img:nth-child(#{$i})
+    mix-blend-mode: nth(($css-blend-modes), $i)
+      
+  
+.region 
+  width: 220px
+  height: 670px
+  float: left
+  padding: .5em
+  +gradient-zebra(darken(yellow, 20%), 90deg, 20%, #fff)
+  background-size: cover
+  background-blend-mode: soft-light
+.region1
+  shape-inside: polygon(80px 0px, 150px 0, 190px 200px, 130px 400px, 200px 550px, 200px 670px, 30px 670px, 0px 100px)
+.region2
+  shape-inside: polygon(150px 0px, 210px 170px, 150px 300px, 220px 670px, 50px 670px, 5px 430px, 40px 270px, 0px 60px)
 
 
 

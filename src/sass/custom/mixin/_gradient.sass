@@ -1,30 +1,51 @@
 
 
+// 渐变随机
+//
+// 参数依次为（背景颜色，渐变角度 0-90deg，背景颜色列表）
+//
+=gradient-random($bg: #f9ebe6, $angle: 90deg, $color-list: #fb3 #ab4 #655)
+  background: $bg
+  background-image: linear-gradient($angle, nth($color-list, 1) 11px, transparent 0), linear-gradient($angle, nth($color-list, 2) 29px, transparent 0), linear-gradient($angle, nth($color-list, 3) 41px, transparent 0)
+  background-size: 41px 100%, 61px 100%, 83px 100%
+
+
+
 // 渐变条纹
 //
-// 参数依次为（背景颜色，渐变角度 0-90deg，背景颜色间距 实际为位置，偶数行背景色）
+// 参数依次为（背景颜色，渐变角度 0-90deg，背景颜色间距，偶数行背景色）
 //
 =gradient-zebra($bg, $angle: 0deg, $step: 10%, $even-bg: rgba(255,255,255,.2)) 
   background-image: repeating-linear-gradient($angle, $even-bg $step, transparent $step, transparent $step*2, $even-bg $step*2, $even-bg $step*3, transparent $step*3)
   background-color: $bg
 
 
+
 // 渐变菱形
 //
 // 参数依次为（背景颜色，渐变角度 0-90deg，背景颜色间距 有两个值，偶数行背景色）
 //
-=gradient-diamond($bg, $angle: 45deg, $size: 20px 20px, $even-bg: rgba(255,255,255,.2)) 
+=gradient-diamond($bg, $angle: 45deg, $size: 30px, $even-bg: rgba(255,255,255,.2)) 
   background-image: linear-gradient($angle, $even-bg 25%, transparent 25%, transparent), linear-gradient(-$angle, $even-bg 25%, transparent 25%, transparent),linear-gradient($angle, transparent 75%, $even-bg 75%),linear-gradient(-$angle, transparent 75%, $even-bg 75%)
   background-color: $bg
-  background-size: $size
+  background-size: $size $size
 
 
-// 渐变网格
+// 渐变交叉
 //
-// 参数依次为（背景颜色，渐变角度 0-90deg，背景颜色间距 实际为位置，偶数行背景色）
+// 参数依次为（背景颜色，渐变角度 0-90deg，背景颜色间距，偶数行背景色）
 //
-=gradient-grid($bg, $angle: 0deg, $step: 10%, $even-bg: rgba(255,255,255,.2)) 
+=gradient-across($bg, $angle: 0deg, $step: 10%, $even-bg: rgba(255,255,255,.2)) 
   background-image: repeating-linear-gradient($angle, $even-bg $step, transparent $step, transparent $step*2, $even-bg $step*2, $even-bg $step*3, transparent $step*3), repeating-linear-gradient(90+$angle, $even-bg $step, transparent $step, transparent $step*2, $even-bg $step*2, $even-bg $step*3, transparent $step*3)
+  background-color: $bg
+
+
+// 渐变交叉
+//
+// 参数依次为（背景颜色，渐变角度 0-90deg，背景颜色间距，偶数行背景色）
+//
+=gradient-across2($bg, $angle: 0deg, $step: 10%, $even-bg: rgba(255,255,255,.2)) 
+  background-image: repeating-linear-gradient($angle, transparent 0, $even-bg $step, transparent $step*2), repeating-linear-gradient(90+$angle, $even-bg 0, transparent $step, $even-bg $step *2)
   background-color: $bg
 
 
@@ -37,3 +58,40 @@
     background-image: repeating-#{$type}-gradient($color)
   @else
     background-image: #{$type}-gradient($color)
+
+
+
+// 渐变网格
+//
+// 参数依次为（背景颜色，渐变角度 0-90deg，背景颜色间距 实际为位置，偶数行背景色）
+//
+=gradient-grid($bg, $size: 15px, $line-width: 2px) 
+  background-image: linear-gradient(0deg, #fff $line-width, transparent 0), linear-gradient(90deg, #fff $line-width, transparent 0), linear-gradient(hsla(0,0%,100%,.3) 1px,transparent 0), linear-gradient(90deg, hsla(0,0%,100%,.3) 1px,transparent 0)
+  background-size: $size * 5 $size * 5, $size * 5 $size * 5, $size $size, $size $size
+  background-color: $bg
+
+
+
+// 渐变-波尔卡圆点
+//
+// 参数依次为（背景颜色， 圆点大小， 圆心位置, 背景重复尺寸）
+//
+=gradient-polka($bg, $dot-color, $dot, $size: 30px)
+  background: $bg
+  background-image: radial-gradient($dot-color $dot, transparent 0), radial-gradient($dot-color $dot, transparent 0)
+  background-size: $size $size
+  background-position: 0 0, $size/2 $size/2
+
+
+
+// 渐变-棋盘
+//
+// 参数依次为（背景颜色，背景重复尺寸大小，另一颜色）
+//
+=gradient-checkerboard($bg, $size: 30px, $other-bg: rgba(255,255,255,.2)) 
+  background-image: linear-gradient(45deg, $other-bg 25%, transparent 0, transparent 75%, $other-bg 0), linear-gradient(45deg, $other-bg 25%, transparent 0, transparent 75%, $other-bg 0)
+  background-color: $bg
+  background-position: 0 0, $size $size
+  background-size: 2*$size 2*$size
+
+
