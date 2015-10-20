@@ -141,23 +141,4 @@
     margin-right: 30px
     
 
-// 代付弹窗下拉面板
-.down-panel
-  +position-basic(absolute, top, 32px, left, 15px)
-  +skin-basic(#f0f0f0,#555,#ccc)
-  z-index: 1000
-  width: calc(100% - 30px)
-  max-height: 97px
-  overflow-y: auto
-  li
-    +line-height(32px)
-    padding-left: 10px
-    border-bottom: 1px solid #ddd
-    cursor: pointer
-    &:last-child
-      border-bottom: 0
-    &:hover
-      background: #ccc
-    
-
 @import ../media-query
