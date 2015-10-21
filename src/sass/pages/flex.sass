@@ -125,7 +125,7 @@
 .tab-content
   +size(400px, 300px) 
   border: 15px solid #965025
-  color: #fff
+  color: #000
   font-size: 16px
   border-image-source: url('data:image/svg+xml,\<svg xmlns="http://www.w3.org/2000/svg" width="3" height="3" fill="#ffa500">\<polygon points="0,0 2,0 3,1 3,3 0,3"/>\</svg>')
   border-image-slice: 1
@@ -136,6 +136,15 @@
   background-clip: padding-box
   +box-shadow-curved(28deg, 11deg, 23px)
   margin-bottom: 50px
+  .img
+    +size(200px)
+    overflow: hidden
+    margin: 10px
+    float: left
+    shape-margin: 20px
+    mask-image: url(../../images/test.png)
+    shape-outside: url(../../images/test.png)
+    shape-image-threshold: 0.0
 
 
 
@@ -144,8 +153,9 @@
   text-align: center
   color: #ccc
   text-shadow: 1px 1px 1px rgba(0,0,0,.3)
-  background: lighten(orange, 20%)
-
+  background: #ace
+  background-blend-mode: luminosity
+  clip-path: url(#theSVGPath)
 
 
 

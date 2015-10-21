@@ -21,12 +21,11 @@
   overflow: hidden
   display: block
   line-height: 145%
-
+  
 // 字符一行
 .ellipsis
-  white-space: nowrap
-  overflow: hidden
-  text-overflow: ellipsis
+  +overflow(ellipsis)
+
 
 // 颜色
 +color('orange', '#ff6000')
