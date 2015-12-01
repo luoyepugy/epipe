@@ -1,0 +1,251 @@
+/*阴影*/
+/*圆角*/
+/*冷色调*/
+.black {
+  color: #000; }
+
+.black-20 {
+  color: #cccccc; }
+
+.black-50 {
+  color: #333333; }
+
+.white {
+  color: #fff; }
+
+.background-white {
+  background-color: #fff; }
+
+a {
+  text-decoration: none; }
+
+/*暖色调*/
+.brand-primary {
+  color: #ff7300; }
+
+.back-brand-primary {
+  background-color: #ff7300; }
+
+.brand-success {
+  color: #7db500; }
+
+.back-brand-success {
+  background-color: #7db500; }
+
+.brand-warning {
+  color: #f18d05; }
+
+.back-brand-warning {
+  background-color: #f18d05; }
+
+.brand-danger {
+  color: #e54028; }
+
+.back-brand-danger {
+  background-color: #e54028; }
+
+.brand-info {
+  color: #87318c; }
+
+.back-brand-info {
+  background-color: #87318c; }
+
+.back-black {
+  background-color: #333333; }
+
+.dark {
+  color: #fff; }
+
+.center {
+  text-align: center; }
+
+.img-responsive {
+  display: inline;
+  width: 100%; }
+
+hr.none {
+  border: 0; }
+
+/*基本设置*/
+/*页面背景色*/
+/*默认的文字颜色*/
+/*默认的链接颜色*/
+/*默认链接hover样式*/
+/*文字选择颜色*/
+::selection {
+  background: #ff7300;
+  color: #fff; }
+
+::-moz-selection {
+  background: #ff7300;
+  color: #fff; }
+
+::-webkit-selection {
+  background: #ff7300;
+  color: #fff; }
+
+::-ms-selection {
+  background: #ff7300;
+  color: #fff; }
+
+::-o-selection {
+  background: #ff7300;
+  color: #fff; }
+
+/*.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  padding: 0; }
+  .col-xs-1 .col-xs-4, .col-xs-1 .col-md-3, .col-xs-1 .col-md-4, .col-xs-2 .col-xs-4, .col-xs-2 .col-md-3, .col-xs-2 .col-md-4, .col-xs-3 .col-xs-4, .col-xs-3 .col-md-3, .col-xs-3 .col-md-4, .col-xs-4 .col-xs-4, .col-xs-4 .col-md-3, .col-xs-4 .col-md-4, .col-xs-5 .col-xs-4, .col-xs-5 .col-md-3, .col-xs-5 .col-md-4, .col-xs-6 .col-xs-4, .col-xs-6 .col-md-3, .col-xs-6 .col-md-4, .col-xs-7 .col-xs-4, .col-xs-7 .col-md-3, .col-xs-7 .col-md-4, .col-xs-8 .col-xs-4, .col-xs-8 .col-md-3, .col-xs-8 .col-md-4, .col-xs-9 .col-xs-4, .col-xs-9 .col-md-3, .col-xs-9 .col-md-4, .col-xs-10 .col-xs-4, .col-xs-10 .col-md-3, .col-xs-10 .col-md-4, .col-xs-11 .col-xs-4, .col-xs-11 .col-md-3, .col-xs-11 .col-md-4, .col-xs-12 .col-xs-4, .col-xs-12 .col-md-3, .col-xs-12 .col-md-4, .col-sm-1 .col-xs-4, .col-sm-1 .col-md-3, .col-sm-1 .col-md-4, .col-sm-2 .col-xs-4, .col-sm-2 .col-md-3, .col-sm-2 .col-md-4, .col-sm-3 .col-xs-4, .col-sm-3 .col-md-3, .col-sm-3 .col-md-4, .col-sm-4 .col-xs-4, .col-sm-4 .col-md-3, .col-sm-4 .col-md-4, .col-sm-5 .col-xs-4, .col-sm-5 .col-md-3, .col-sm-5 .col-md-4, .col-sm-6 .col-xs-4, .col-sm-6 .col-md-3, .col-sm-6 .col-md-4, .col-sm-7 .col-xs-4, .col-sm-7 .col-md-3, .col-sm-7 .col-md-4, .col-sm-8 .col-xs-4, .col-sm-8 .col-md-3, .col-sm-8 .col-md-4, .col-sm-9 .col-xs-4, .col-sm-9 .col-md-3, .col-sm-9 .col-md-4, .col-sm-10 .col-xs-4, .col-sm-10 .col-md-3, .col-sm-10 .col-md-4, .col-sm-11 .col-xs-4, .col-sm-11 .col-md-3, .col-sm-11 .col-md-4, .col-sm-12 .col-xs-4, .col-sm-12 .col-md-3, .col-sm-12 .col-md-4, .col-md-1 .col-xs-4, .col-md-1 .col-md-3, .col-md-1 .col-md-4, .col-md-2 .col-xs-4, .col-md-2 .col-md-3, .col-md-2 .col-md-4, .col-md-3 .col-xs-4, .col-md-3 .col-md-3, .col-md-3 .col-md-4, .col-md-4 .col-xs-4, .col-md-4 .col-md-3, .col-md-4 .col-md-4, .col-md-5 .col-xs-4, .col-md-5 .col-md-3, .col-md-5 .col-md-4, .col-md-6 .col-xs-4, .col-md-6 .col-md-3, .col-md-6 .col-md-4, .col-md-7 .col-xs-4, .col-md-7 .col-md-3, .col-md-7 .col-md-4, .col-md-8 .col-xs-4, .col-md-8 .col-md-3, .col-md-8 .col-md-4, .col-md-9 .col-xs-4, .col-md-9 .col-md-3, .col-md-9 .col-md-4, .col-md-10 .col-xs-4, .col-md-10 .col-md-3, .col-md-10 .col-md-4, .col-md-11 .col-xs-4, .col-md-11 .col-md-3, .col-md-11 .col-md-4, .col-md-12 .col-xs-4, .col-md-12 .col-md-3, .col-md-12 .col-md-4, .col-lg-1 .col-xs-4, .col-lg-1 .col-md-3, .col-lg-1 .col-md-4, .col-lg-2 .col-xs-4, .col-lg-2 .col-md-3, .col-lg-2 .col-md-4, .col-lg-3 .col-xs-4, .col-lg-3 .col-md-3, .col-lg-3 .col-md-4, .col-lg-4 .col-xs-4, .col-lg-4 .col-md-3, .col-lg-4 .col-md-4, .col-lg-5 .col-xs-4, .col-lg-5 .col-md-3, .col-lg-5 .col-md-4, .col-lg-6 .col-xs-4, .col-lg-6 .col-md-3, .col-lg-6 .col-md-4, .col-lg-7 .col-xs-4, .col-lg-7 .col-md-3, .col-lg-7 .col-md-4, .col-lg-8 .col-xs-4, .col-lg-8 .col-md-3, .col-lg-8 .col-md-4, .col-lg-9 .col-xs-4, .col-lg-9 .col-md-3, .col-lg-9 .col-md-4, .col-lg-10 .col-xs-4, .col-lg-10 .col-md-3, .col-lg-10 .col-md-4, .col-lg-11 .col-xs-4, .col-lg-11 .col-md-3, .col-lg-11 .col-md-4, .col-lg-12 .col-xs-4, .col-lg-12 .col-md-3, .col-lg-12 .col-md-4 {
+    padding: 0; }
+  .col-xs-1 .col-xs-12, .col-xs-2 .col-xs-12, .col-xs-3 .col-xs-12, .col-xs-4 .col-xs-12, .col-xs-5 .col-xs-12, .col-xs-6 .col-xs-12, .col-xs-7 .col-xs-12, .col-xs-8 .col-xs-12, .col-xs-9 .col-xs-12, .col-xs-10 .col-xs-12, .col-xs-11 .col-xs-12, .col-xs-12 .col-xs-12, .col-sm-1 .col-xs-12, .col-sm-2 .col-xs-12, .col-sm-3 .col-xs-12, .col-sm-4 .col-xs-12, .col-sm-5 .col-xs-12, .col-sm-6 .col-xs-12, .col-sm-7 .col-xs-12, .col-sm-8 .col-xs-12, .col-sm-9 .col-xs-12, .col-sm-10 .col-xs-12, .col-sm-11 .col-xs-12, .col-sm-12 .col-xs-12, .col-md-1 .col-xs-12, .col-md-2 .col-xs-12, .col-md-3 .col-xs-12, .col-md-4 .col-xs-12, .col-md-5 .col-xs-12, .col-md-6 .col-xs-12, .col-md-7 .col-xs-12, .col-md-8 .col-xs-12, .col-md-9 .col-xs-12, .col-md-10 .col-xs-12, .col-md-11 .col-xs-12, .col-md-12 .col-xs-12, .col-lg-1 .col-xs-12, .col-lg-2 .col-xs-12, .col-lg-3 .col-xs-12, .col-lg-4 .col-xs-12, .col-lg-5 .col-xs-12, .col-lg-6 .col-xs-12, .col-lg-7 .col-xs-12, .col-lg-8 .col-xs-12, .col-lg-9 .col-xs-12, .col-lg-10 .col-xs-12, .col-lg-11 .col-xs-12, .col-lg-12 .col-xs-12 {
+    padding-top: 0; }
+  .col-xs-1 .col-xs-8, .col-xs-2 .col-xs-8, .col-xs-3 .col-xs-8, .col-xs-4 .col-xs-8, .col-xs-5 .col-xs-8, .col-xs-6 .col-xs-8, .col-xs-7 .col-xs-8, .col-xs-8 .col-xs-8, .col-xs-9 .col-xs-8, .col-xs-10 .col-xs-8, .col-xs-11 .col-xs-8, .col-xs-12 .col-xs-8, .col-sm-1 .col-xs-8, .col-sm-2 .col-xs-8, .col-sm-3 .col-xs-8, .col-sm-4 .col-xs-8, .col-sm-5 .col-xs-8, .col-sm-6 .col-xs-8, .col-sm-7 .col-xs-8, .col-sm-8 .col-xs-8, .col-sm-9 .col-xs-8, .col-sm-10 .col-xs-8, .col-sm-11 .col-xs-8, .col-sm-12 .col-xs-8, .col-md-1 .col-xs-8, .col-md-2 .col-xs-8, .col-md-3 .col-xs-8, .col-md-4 .col-xs-8, .col-md-5 .col-xs-8, .col-md-6 .col-xs-8, .col-md-7 .col-xs-8, .col-md-8 .col-xs-8, .col-md-9 .col-xs-8, .col-md-10 .col-xs-8, .col-md-11 .col-xs-8, .col-md-12 .col-xs-8, .col-lg-1 .col-xs-8, .col-lg-2 .col-xs-8, .col-lg-3 .col-xs-8, .col-lg-4 .col-xs-8, .col-lg-5 .col-xs-8, .col-lg-6 .col-xs-8, .col-lg-7 .col-xs-8, .col-lg-8 .col-xs-8, .col-lg-9 .col-xs-8, .col-lg-10 .col-xs-8, .col-lg-11 .col-xs-8, .col-lg-12 .col-xs-8 {
+    padding-top: 0; }
+  .col-xs-1 .col-md-6 .title, .col-xs-1 .col-xs-12 .title, .col-xs-1 .col-xs-4 .title, .col-xs-2 .col-md-6 .title, .col-xs-2 .col-xs-12 .title, .col-xs-2 .col-xs-4 .title, .col-xs-3 .col-md-6 .title, .col-xs-3 .col-xs-12 .title, .col-xs-3 .col-xs-4 .title, .col-xs-4 .col-md-6 .title, .col-xs-4 .col-xs-12 .title, .col-xs-4 .col-xs-4 .title, .col-xs-5 .col-md-6 .title, .col-xs-5 .col-xs-12 .title, .col-xs-5 .col-xs-4 .title, .col-xs-6 .col-md-6 .title, .col-xs-6 .col-xs-12 .title, .col-xs-6 .col-xs-4 .title, .col-xs-7 .col-md-6 .title, .col-xs-7 .col-xs-12 .title, .col-xs-7 .col-xs-4 .title, .col-xs-8 .col-md-6 .title, .col-xs-8 .col-xs-12 .title, .col-xs-8 .col-xs-4 .title, .col-xs-9 .col-md-6 .title, .col-xs-9 .col-xs-12 .title, .col-xs-9 .col-xs-4 .title, .col-xs-10 .col-md-6 .title, .col-xs-10 .col-xs-12 .title, .col-xs-10 .col-xs-4 .title, .col-xs-11 .col-md-6 .title, .col-xs-11 .col-xs-12 .title, .col-xs-11 .col-xs-4 .title, .col-xs-12 .col-md-6 .title, .col-xs-12 .col-xs-12 .title, .col-xs-12 .col-xs-4 .title, .col-sm-1 .col-md-6 .title, .col-sm-1 .col-xs-12 .title, .col-sm-1 .col-xs-4 .title, .col-sm-2 .col-md-6 .title, .col-sm-2 .col-xs-12 .title, .col-sm-2 .col-xs-4 .title, .col-sm-3 .col-md-6 .title, .col-sm-3 .col-xs-12 .title, .col-sm-3 .col-xs-4 .title, .col-sm-4 .col-md-6 .title, .col-sm-4 .col-xs-12 .title, .col-sm-4 .col-xs-4 .title, .col-sm-5 .col-md-6 .title, .col-sm-5 .col-xs-12 .title, .col-sm-5 .col-xs-4 .title, .col-sm-6 .col-md-6 .title, .col-sm-6 .col-xs-12 .title, .col-sm-6 .col-xs-4 .title, .col-sm-7 .col-md-6 .title, .col-sm-7 .col-xs-12 .title, .col-sm-7 .col-xs-4 .title, .col-sm-8 .col-md-6 .title, .col-sm-8 .col-xs-12 .title, .col-sm-8 .col-xs-4 .title, .col-sm-9 .col-md-6 .title, .col-sm-9 .col-xs-12 .title, .col-sm-9 .col-xs-4 .title, .col-sm-10 .col-md-6 .title, .col-sm-10 .col-xs-12 .title, .col-sm-10 .col-xs-4 .title, .col-sm-11 .col-md-6 .title, .col-sm-11 .col-xs-12 .title, .col-sm-11 .col-xs-4 .title, .col-sm-12 .col-md-6 .title, .col-sm-12 .col-xs-12 .title, .col-sm-12 .col-xs-4 .title, .col-md-1 .col-md-6 .title, .col-md-1 .col-xs-12 .title, .col-md-1 .col-xs-4 .title, .col-md-2 .col-md-6 .title, .col-md-2 .col-xs-12 .title, .col-md-2 .col-xs-4 .title, .col-md-3 .col-md-6 .title, .col-md-3 .col-xs-12 .title, .col-md-3 .col-xs-4 .title, .col-md-4 .col-md-6 .title, .col-md-4 .col-xs-12 .title, .col-md-4 .col-xs-4 .title, .col-md-5 .col-md-6 .title, .col-md-5 .col-xs-12 .title, .col-md-5 .col-xs-4 .title, .col-md-6 .col-md-6 .title, .col-md-6 .col-xs-12 .title, .col-md-6 .col-xs-4 .title, .col-md-7 .col-md-6 .title, .col-md-7 .col-xs-12 .title, .col-md-7 .col-xs-4 .title, .col-md-8 .col-md-6 .title, .col-md-8 .col-xs-12 .title, .col-md-8 .col-xs-4 .title, .col-md-9 .col-md-6 .title, .col-md-9 .col-xs-12 .title, .col-md-9 .col-xs-4 .title, .col-md-10 .col-md-6 .title, .col-md-10 .col-xs-12 .title, .col-md-10 .col-xs-4 .title, .col-md-11 .col-md-6 .title, .col-md-11 .col-xs-12 .title, .col-md-11 .col-xs-4 .title, .col-md-12 .col-md-6 .title, .col-md-12 .col-xs-12 .title, .col-md-12 .col-xs-4 .title, .col-lg-1 .col-md-6 .title, .col-lg-1 .col-xs-12 .title, .col-lg-1 .col-xs-4 .title, .col-lg-2 .col-md-6 .title, .col-lg-2 .col-xs-12 .title, .col-lg-2 .col-xs-4 .title, .col-lg-3 .col-md-6 .title, .col-lg-3 .col-xs-12 .title, .col-lg-3 .col-xs-4 .title, .col-lg-4 .col-md-6 .title, .col-lg-4 .col-xs-12 .title, .col-lg-4 .col-xs-4 .title, .col-lg-5 .col-md-6 .title, .col-lg-5 .col-xs-12 .title, .col-lg-5 .col-xs-4 .title, .col-lg-6 .col-md-6 .title, .col-lg-6 .col-xs-12 .title, .col-lg-6 .col-xs-4 .title, .col-lg-7 .col-md-6 .title, .col-lg-7 .col-xs-12 .title, .col-lg-7 .col-xs-4 .title, .col-lg-8 .col-md-6 .title, .col-lg-8 .col-xs-12 .title, .col-lg-8 .col-xs-4 .title, .col-lg-9 .col-md-6 .title, .col-lg-9 .col-xs-12 .title, .col-lg-9 .col-xs-4 .title, .col-lg-10 .col-md-6 .title, .col-lg-10 .col-xs-12 .title, .col-lg-10 .col-xs-4 .title, .col-lg-11 .col-md-6 .title, .col-lg-11 .col-xs-12 .title, .col-lg-11 .col-xs-4 .title, .col-lg-12 .col-md-6 .title, .col-lg-12 .col-xs-12 .title, .col-lg-12 .col-xs-4 .title {
+    font-size: 1.23em;
+    font-weight: 600; }*/
+
+.hr-dashed {
+  border-top: 1px dashed #999999;
+  overflow: hidden;
+  margin-top: 5px; }
+  .hr-dashed ul {
+    list-style: square inside url('../images/point.jpg');
+    color: #a8a8a8;
+    white-space: nowrap; }
+    .hr-dashed ul li {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+
+.main-ground {
+  background: #fff;
+  padding-bottom: 1em; }
+
+.bcon {
+  margin-top: 10px; }
+  .bcon .col-xs-1, .bcon .col-xs-2, .bcon .col-xs-3, .bcon .col-xs-4, .bcon .col-xs-5, .bcon .col-xs-6, .bcon .col-xs-7, .bcon .col-xs-8, .bcon .col-xs-9, .bcon .col-xs-10, .bcon .col-xs-11, .bcon .col-xs-12, .bcon .col-sm-1, .bcon .col-sm-2, .bcon .col-sm-3, .bcon .col-sm-4, .bcon .col-sm-5, .bcon .col-sm-6, .bcon .col-sm-7, .bcon .col-sm-8, .bcon .col-sm-9, .bcon .col-sm-10, .bcon .col-sm-11, .bcon .col-sm-12, .bcon .col-md-1, .bcon .col-md-2, .bcon .col-md-3, .bcon .col-md-4, .bcon .col-md-5, .bcon .col-md-6, .bcon .col-md-7, .bcon .col-md-8, .bcon .col-md-9, .bcon .col-md-10, .bcon .col-md-11, .bcon .col-md-12, .bcon .col-lg-1, .bcon .col-lg-2, .bcon .col-lg-3, .bcon .col-lg-4, .bcon .col-lg-5, .bcon .col-lg-6, .bcon .col-lg-7, .bcon .col-lg-8, .bcon .col-lg-9, .bcon .col-lg-10, .bcon .col-lg-11, .bcon .col-lg-12 {
+    padding: 5px; }
+  .bcon .bottom {
+    overflow: hidden;
+    padding-bottom: 5px; }
+  .bcon ul {
+    list-style: square inside url('../images/point.jpg');
+    color: #999; }
+    .bcon ul li {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+
+.first-ul {
+  color: #333333;
+  text-indent: 1em;
+  border: 1px solid #e6e6e6; }
+  .first-ul .first-li {
+    background: #e6e6e6;
+    line-height: 32px;
+    font-size: 1.23em; }
+  .first-ul .second-ul {
+    cursor: pointer;
+    font-weight: 600; }
+  .first-ul .toggle-ul {
+    /*display: none;*/
+    padding-right: 10px; }
+    .first-ul .toggle-ul li {
+      float: left; }
+      .first-ul .toggle-ul li a {
+        color: #666666; }
+      .first-ul .toggle-ul li a:hover {
+        color: #ff7300; }
+/*  .first-ul .active {
+    display: block; }*/
+
+
+.commpanystore .img-responsive {
+  margin: 0 auto; }
+
+.commpanystore-middle {
+  font-size: 1.54em; }
+  .commpanystore-middle hr {
+    border-top: 2px solid #666666;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .commpanystore-middle span {
+    float: right;
+    font-size: 0.6em; }
+  .commpanystore-middle .top {
+    display: block;
+    margin-bottom: 10px; }
+
+.block {
+  border: 1px solid #e6e6e6;
+  padding: 0 8px;
+  margin-bottom: -1px; }
+  .block .event-info {
+    font-size: 1em;
+    width: 60%;
+    padding-top: 15px;
+    height: auto; }
+  .block .big-img {
+    padding: 0 10px;
+    text-align: center; }
+  .block .event-block .cover-small {
+    padding: 12px 10px 12px 5px; }
+
+.search-answer .left {
+  width: 333px;
+  position: absolute;
+  z-index: 2; }
+  .search-answer .left ul .active {
+    border-top: 3px solid #ff7300; }
+  .search-answer .left ul li {
+    float: left;
+    width: 110px;
+    border-right: 1px solid #e0e0e0;
+    line-height: 40px;
+    text-align: center;
+    border-top: 3px solid #e0e0e0;
+    cursor: pointer; }
+.search-answer .right {
+  float: right;
+  text-align: right;
+  width: 100%;
+  line-height: 40px;
+  border: 1px solid #e0e0e0;
+  padding: 0 0 0 333px;
+  color: #ff7300;
+  border-top: 3px solid #e0e0e0; }
+
+.bid-new .new-title {
+  font-size: 1.53em;
+  line-height: 30px;
+  padding: 15px 0 10px 0; }
+.bid-new p {
+  color: #999999; }
+.bid-new .time {
+  color: #999999;
+  text-indent: 2em; }
+  .bid-new .time span {
+    text-indent: 0;
+    padding: 0 8px;
+    border: 1px solid #e0e0e0;
+    float: right;
+    margin-right: 20px; }
+
+.search-order {
+  margin-top: 20px; }
+  .search-order li {
+    color: #a8a8a8;
+    list-style: square inside url('../images/point.jpg');
+    position: relative;
+    height: 26px;
+    width: 100%;
+    padding-right: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden; }
+    .search-order li span {
+      position: absolute;
+      right: 0;
+      top: 0; }
+
+/*# sourceMappingURL=bidpage.css.map */

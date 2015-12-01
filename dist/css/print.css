@@ -1,0 +1,76 @@
+.modal-header{
+  padding-bottom: 25px;
+}
+.print-dialog {
+  margin: 0 auto;
+  width: 1000px; }
+
+.print-body {
+  margin: 0 auto;
+  width: 800px; }
+
+.order-print {
+  width: 100%;
+  font-size: 12px; }
+  .order-print .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 10px; }
+  .order-print .tips {
+    margin: 20px;
+    color: #aaa; }
+  .order-print table {
+    width: 100%;
+    border-collapse: collapse; }
+    .order-print table thead th {
+      padding: 10px; }
+    .order-print table thead th:first-child {
+      text-align: left; }
+    .order-print table thead th:last-child {
+      text-align: right; }
+    .order-print table tbody {
+      border: 1px solid #000;
+      width: 100%; }
+      .order-print table tbody .table-header td {
+        text-align: center; }
+      .order-print table tbody tr {
+        width: 100%; }
+      .order-print table tbody .text-10 {
+        width: 10%; }
+      .order-print table tbody .text-20 {
+        width: 20%; }
+      .order-print table tbody .text-30 {
+        width: 30%; }
+      .order-print table tbody .text-40 {
+        width: 40%; }
+      .order-print table tbody .text-50 {
+        width: 50%; }
+      .order-print table tbody .text-60 {
+        width: 60%; }
+      .order-print table tbody .text-70 {
+        width: 70%; }
+      .order-print table tbody .text-80 {
+        width: 80%; }
+      .order-print table tbody .text-90 {
+        width: 90%; }
+      .order-print table tbody .text-100 {
+        width: 100%; }
+      .order-print table tbody td {
+        border: 1px solid #000;
+        background-color: #fff;
+        padding: 10px; }
+    .order-print table tfoot {
+      border: 1px solid #000; }
+      .order-print table tfoot span {
+        display: block; }
+
+@media print {
+  .order-print {
+    font-size: 12px; }
+
+  .noprint {
+    display: none; }
+ }
+
+/*# sourceMappingURL=print.css.map */

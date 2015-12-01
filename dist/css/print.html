@@ -1,0 +1,122 @@
+<div class="modal fade in" id="offlineOrder" tabindex="-1" role="dialog" data-form-href="/PopupFrm/OfflineOrder" aria-hidden="false" data-backdrop="static" data-keyboard="false" style="display: block;">
+
+    <link href="../css/print.css" rel="stylesheet">
+    <link href="../css/pageination.css" rel="stylesheet">
+    <div class="modal-dialog print-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button id="btnInquiryClose" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="block-form">
+                    <div class="print-body" name="printValue">
+                        <div class="order-print">
+                            <div class="title">优管网订单线下转账单</div>
+                            <table border="0" cellspacing="1" cellpadding="0">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">订单号：150923022737127953</th>
+                                        <th colspan="4">日期：2015-09-23</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="table-header">
+                                        <td class="text-20"><b>商品编号</b></td>
+                                        <td class="text-40"><b>商品名称</b></td>
+                                        <td class="text-10"><b>单价（元）</b></td>
+                                        <td class="text-10"><b>单位</b></td>
+                                        <td class="text-10"><b>数量</b></td>
+                                        <td class="text-10"><b>小计（元）</b></td>
+                                    </tr>
+
+                                        <tr>
+                                            <td>lzgd</td>
+                                            <td>
+                                                碳素结构钢冷轧光面钢带
+                                                <br>
+                                                大小:1.5×20 &nbsp;&nbsp;&nbsp;
+                                            </td>
+                                            <td>3500.00</td>
+                                            <td>吨</td>
+                                            <td>1</td>
+                                            <td>99999.99</td>
+
+                                        </tr>
+
+
+                                    <tr>
+                                        <td colspan="6">运费：0元</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">总计：99999.99元 (玖万玖仟玖佰玖拾玖元玖角玖分)</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td colspan="6">
+                                            <b>银行信息</b><br>
+                                            <span>收款公司：深圳前海优管信息技术有限公司 | </span>
+                                            <span>开户行：平安银行深圳八卦岭支行 | </span>
+                                            <span>银行账户：1101 4602 934 007</span>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <div class="tips">
+                                温馨提示：<br>
+                                如有疑问，请登录优管网（www.epipe.cn）进行咨询，或联系客服处理(QQ：2577856599  手机：13808805506)<br>
+                                <span class="noprint">
+                                    如果打印出现错位，表格不正常，请勿使用老式浏览器（IE6、IE7），请使用现代浏览器打印（IE8以上、火狐、谷歌、360极速等）
+                                </span>
+                            </div>
+                        </div>    
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="pagination-all">
+                    <div class="produts-pagination">
+                        <ul>
+                            <li class="active"><span>1</span></li>
+                            <li><a name="pageChange" href="javascript:void(0)" data-page="2">2</a></li>
+                            <li><a name="pageChange" href="javascript:void(0)" data-page="3">3</a></li>
+                            <li><a name="pageChange" href="javascript:void(0)" data-page="2">下一页</a></li>
+                            <li><a name="pageChange" href="javascript:void(0)" data-page="3">尾页</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="fl">
+                    <button class="btn btn-primary" name="btnPrint">打印</button>
+                    <button class="btn btn-default" name="btnOffline">确定</button>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="/Content/js/print.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            //打印
+            $("[name='btnPrint']").click(function () {
+                myPrint($("[name='printValue']"));
+            });
+
+            //确定
+            $("[name='btnOffline']").click(function () {
+                PostOffline();
+            });
+
+            //分页跳转
+            $("[name='pageChange']").click(function () {
+
+                var page = $(this).attr("data-page");
+                //$('#offlineOrder').modal('hide');
+                LoadOfflineModal(page);
+            });
+
+          
+        })
+    </script>
+    </div>

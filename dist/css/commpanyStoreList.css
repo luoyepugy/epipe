@@ -1,0 +1,185 @@
+/*阴影*/
+/*圆角*/
+/*冷色调*/
+.black {
+  color: #000; }
+
+.black-20 {
+  color: #cccccc; }
+
+.black-50 {
+  color: #333333; }
+
+.white {
+  color: #fff; }
+
+.background-white {
+  background-color: #fff; }
+
+a {
+  text-decoration: none; }
+
+/*暖色调*/
+.brand-primary {
+  color: #f15c2b; }
+
+.back-brand-primary {
+  background-color: #f15c2b; }
+
+.brand-success {
+  color: #7db500; }
+
+.back-brand-success {
+  background-color: #7db500; }
+
+.brand-warning {
+  color: #f18d05; }
+
+.back-brand-warning {
+  background-color: #f18d05; }
+
+.brand-danger {
+  color: #e54028; }
+
+.back-brand-danger {
+  background-color: #e54028; }
+
+.brand-info {
+  color: #87318c; }
+
+.back-brand-info {
+  background-color: #87318c; }
+
+.back-black {
+  background-color: #333333; }
+
+.dark {
+  color: #fff; }
+
+.center {
+  text-align: center; }
+
+.img-responsive {
+  display: inline;
+  width: 100%; }
+
+hr.none {
+  border: 0; }
+
+/*基本设置*/
+/*页面背景色*/
+/*默认的文字颜色*/
+/*默认的链接颜色*/
+/*默认链接hover样式*/
+/*文字选择颜色*/
+::selection {
+  background: #f15c2b;
+  color: #fff; }
+
+::-moz-selection {
+  background: #f15c2b;
+  color: #fff; }
+
+::-webkit-selection {
+  background: #f15c2b;
+  color: #fff; }
+
+::-ms-selection {
+  background: #f15c2b;
+  color: #fff; }
+
+::-o-selection {
+  background: #f15c2b;
+  color: #fff; }
+
+.main-ground {
+  background: #fff;
+  padding-bottom: 1em; }
+
+.supplier-ground {
+  background: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden; }
+  .supplier-ground .supplier {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    line-height: 42px;
+    padding: 0; }
+  .supplier-ground .supplier-bottom {
+    overflow: hidden; }
+    .supplier-ground .supplier-bottom span {
+      color: red;
+      font-weight: 600; }
+
+.bcon ul {
+  list-style: square;
+  margin-left: 16px;
+  color: #999; }
+
+.first-ul {
+  text-indent: 1em;
+  border: 1px solid #e6e6e6; }
+  .first-ul .first-li {
+    background: #e6e6e6;
+    line-height: 32px;
+    font-size: 1.23em; }
+  .first-ul .second-ul li {
+    float: left; }
+
+.company-classify {
+  line-height: 36px;
+  border: 1px solid #e6e6e6; }
+  .company-classify .block-company {
+    border-bottom: 1px dashed #e6e6e6; }
+  .company-classify .block-head {
+    position: absolute;
+    color: #999999; }
+  .company-classify .block-head, .company-classify .block-body {
+    float: left; }
+  .company-classify .block-head ul li, .company-classify .block-body ul li {
+    float: left;
+    padding: 0 1em;
+    text-decoration: none; }
+  .company-classify .block-body {
+    padding: 0 0 0 80px;
+    color: #666666; }
+    .company-classify .block-body a {
+      color: #666666; }
+    .company-classify .block-body a:hover {
+      color: #f15c2b; }
+
+.search-answer {
+  margin-top: 17px;
+  width: 100%; }
+  .search-answer .left {
+    font-size: 1.08em;
+    color: #666666;
+    font-weight: 600;
+    float: left;
+    background: #fff;
+    line-height: 40px;
+    border-top: 3px solid #f15c2b;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    text-align: center;
+    width: 110px; }
+  .search-answer .right {
+    color: #999999;
+    text-align: right;
+    width: 100%;
+    line-height: 42px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 0 0 110px; }
+    .search-answer .right a {
+      color: #999999; }
+    .search-answer .right a:hover {
+      color: #f15c2b; }
+
+.search-list {
+  padding: 20px 5px; }
+
+/*# sourceMappingURL=commpanyStoreList.css.map */

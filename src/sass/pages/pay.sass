@@ -20,7 +20,7 @@
     &:hover
       background: #fff0e8
       .default
-        display: inline-block
+        +inline-block
     .add-hide 
       display: none
     *
@@ -31,7 +31,7 @@
     font-weight: bold
     padding-left: 55px
     .add-hide
-      display: inline-block
+      +inline-block
 
   // 设置为默认收货地址
   .default
@@ -50,7 +50,7 @@
 // 小标题
 .title
   border-bottom: 1px solid #f1f1f1
-  +line-height(30px)
+  line-height: 30px
   margin-bottom: 20px
   font-size: 15px
   font-weight: bold
@@ -61,11 +61,13 @@
 .wayList
   padding-left: 50px
   li
-    display: inline-block
+    +inline-block
     width: 23%
     margin-bottom: 10px
   *
     vertical-align: middle
+  label
+    display: inline\9
 
 // 确认收货信息
 .infos
@@ -121,7 +123,7 @@
   .confirm
     border: 1px solid #ff5500
     padding: 10px
-    display: inline-block
+    +inline-block
     min-width: 300px
 // 提交按钮
 .btn-submit 
@@ -129,7 +131,7 @@
   +inside-center(125px, 36px)
   width: 125px
   font-size: 18px
-  display: inline-block
+  +inline-block
   cursor: pointer
   &:hover
     background: #f42a00

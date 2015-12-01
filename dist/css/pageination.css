@@ -1,0 +1,42 @@
+/*冷色调*/
+/*暖色调*/
+/*基本设置*/
+/*页面背景色*/
+/*默认的文字颜色*/
+/*默认的链接颜色*/
+/*默认链接hover样式*/
+/*分页选中颜色*/
+.pagination-all {
+  float: right;
+  margin-top: -15px; }
+  .pagination-all ul {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    /*border-radius: 4px;*/ }
+    .pagination-all ul li {
+      display: inline;
+      /*a:focus,a:hover,span:focus,span:hover{
+                color: #23527c;
+	            background-color: #eee;
+	            border-color: #ddd;
+            }*/ }
+      .pagination-all ul li a, .pagination-all ul li span {
+        position: relative;
+        float: left;
+        padding: 6px 12px;
+        margin-left: -1px;
+        line-height: 1.5;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #ddd; }
+      .pagination-all ul li a:hover {
+        color: #f15c2b; }
+    .pagination-all ul .active span {
+      z-index: 2;
+      color: #fff;
+      cursor: default;
+      background-color: #f15c2b;
+      border-color: #f15c2b; }
+
+/*# sourceMappingURL=pageination.css.map */
