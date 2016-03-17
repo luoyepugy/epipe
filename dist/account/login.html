@@ -7,6 +7,12 @@
 	<link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../css/common.min.css">
 	<link rel="stylesheet" href="../css/pages/account.min.css">	
+	<script src="../../lib/jquery-validation/lib/jquery-1.6.1.js"></script>
+	<!--[if lt IE 9]>
+      <script src="../../lib/html5shiv.js"></script>
+      <script src="../../lib/respond.min.js"></script>
+    <![endif]-->
+    <!--改版后css End-->
 </head>
 <body>
 <!-- 头部导航 -->
@@ -21,29 +27,29 @@
 	</div>
 	<!-- /头部导航 -->
 	<!-- 中间内容 -->
-	<div class="content">
+	<div class="content2">
 		<div class="container">
 			<div class="row">
-				<div class="hidden-xs col-sm-6 col-md-5 col-md-offset-1">
+				<div class="col-sm-5 hidden-xs col-md-5 col-sm-offset-0 col-md-offset-1">
 					<img class="img-responsive" src="../images/login-banner.jpg" alt="登录图片">
 				</div>
 				<div class="col-xs-10 col-sm-6 col-md-5 col-lg-4 account-form col-xs-offset-1 col-sm-offset-0">
 					<h3 class="tc">账户登录</h3>
-					<form action="http://www.baidu.com" method="post" class="form-horizontal" >
+					<form action="http://www.baidu.com" method="post" class="form-horizontal j-login">
 						<div class="input-group">
 							<span class="input-group-addon glyphicon glyphicon-user"></span>
-							<input type="email" id="email" name="email" class="form-control" placeholder="请输入Email" required="required" oninput="checkAccount(this, 'email')" onpropertychange="checkAccount(this, 'email')" />
+							<input type="text" id="email" name="email" class="form-control" placeholder="请输入邮箱" />
 						</div>
 						<div class="input-group">
 							<span class="input-group-addon glyphicon glyphicon-lock"></span>
-							<input type="password" id="pwd" name="password" class="form-control" placeholder="请输入密码" required="required" pattern="\w{6,}" oninput="checkAccount(this, 'pwd')" onpropertychange="checkAccount(this, 'pwd')" />
+							<input type="password" id="pwd" name="password" class="form-control" placeholder="请输入密码" />
 						</div>
 						<p class="row login-auto">
 							<label class="col-xs-7" for="autoLogin">
 								<input class="mr5" type="checkbox" name="autoLogin" id="autoLogin" />&nbsp;2周内自动登录</label>
 							<span class="col-xs-5 tr"><a href="find-pwd.html">忘记密码？</a></span>
 						</p>
-						<p><input class="account-button" name="loginBtn" type="submit" value="登录" onclick="check()" /></p>
+						<p><input class="account-button" name="loginBtn" type="submit" value="登录" /></p>
 					</form>
 					<div class="row login-other">
 						<div class="col-sm-4 hidden-xs text">其他登录方式：</div>
@@ -93,7 +99,8 @@
 		</div>
 	</div>
 	<!-- /底部版权 -->
-<script src="../../lib/jquery.min.js"></script>
+
+<script src="../../lib/jquery-validation/jquery.validate.js"></script>
 <script src="../js/pages/account.js"></script>
 </body>
 </html>
